@@ -2,14 +2,14 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/Users/EmilSmith/Documents/dev/emil-smith-2018/user/config/system.yaml',
-    'modified' => 1539042373,
+    'modified' => 1540378014,
     'data' => [
         'absolute_urls' => false,
         'home' => [
             'alias' => '/home'
         ],
         'pages' => [
-            'theme' => 'quark',
+            'theme' => 'emil-smith',
             'markdown' => [
                 'extra' => false
             ],
