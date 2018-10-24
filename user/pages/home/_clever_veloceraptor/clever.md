@@ -30,12 +30,14 @@ skills:
       items:
         - subject: development
           abilities:
-            - ability: html
-              ability: css
-              ability: js
-              ability: grav
+            - name: html
+            - name: css
+            - name: js
+            - name: grav
         - subject: design
           abilities:
-            - ability: photoshop
-              ability: illustrator
+            - name: photoshop
+            - name: illustrator
 ---
+
+# clever
