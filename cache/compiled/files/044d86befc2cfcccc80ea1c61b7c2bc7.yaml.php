@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/Users/EmilSmith/Documents/dev/emil-smith-2018/system/config/system.yaml',
-    'modified' => 1539042373,
+    'modified' => 1540393617,
     'data' => [
         'absolute_urls' => false,
         'timezone' => '',
@@ -51,7 +51,7 @@ return [
                 'twig' => false
             ],
             'twig_first' => false,
-            'never_cache_twig' => false,
+            'never_cache_twig' => true,
             'events' => [
                 'page' => true,
                 'twig' => true
@@ -147,7 +147,7 @@ return [
             'log' => true
         ],
         'debugger' => [
-            'enabled' => false,
+            'enabled' => true,
             'shutdown' => [
                 'close_connection' => true
             ]

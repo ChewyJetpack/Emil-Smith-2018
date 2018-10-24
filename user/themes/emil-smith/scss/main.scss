@@ -1,4 +1,11 @@
+// dependencies
 @import '../node_modules/bootstrap/scss/bootstrap-grid';
+
+// global
 @import './partials/_base';
+@import './partials/_vars';
 @import './partials/_header';
-@import './partials/_gradients';
+
+// modules
+@import './partials/_module';
+@import './partials/_intro';

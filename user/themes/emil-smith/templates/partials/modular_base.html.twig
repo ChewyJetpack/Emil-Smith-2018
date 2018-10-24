@@ -42,9 +42,7 @@
                 </div>
                 <div class="col-sm-8">
                     {% block header_navigation %}
-                    <nav class="main-nav">
-                        {% include 'partials/navigation.html.twig' %}
-                    </nav>
+                        {% include 'partials/modular_nav.html.twig' %}
                     {% endblock %}
                 </div>
             </div>
@@ -52,22 +50,8 @@
     </header>
 {% endblock %}
 
-{% block body %}
-    <section id="body">
-        <div class="container">
-            <div class="row">
-                <div class="col-12"> 
-                    {{ page.content }}    
-                </div>
-            </div>
-        </div>
-    </section>
-{% endblock %}
-
 {% block modular %}
-    <section id="body">
-       {{ page.content }}  
-    </section>
+       {{ page.content }} 
 {% endblock %}
 
 {% block footer %}

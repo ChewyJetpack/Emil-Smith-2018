@@ -3,7 +3,56 @@ header {
 }
 
 .logo {
+    display: block;
+    color:$white;
+    text-decoration: none;
+    opacity: 1;
     img {
         max-width:40px;
+        display: inline-block;
+        float:left;
+        transition:transform 0.3s;
     }  
+    span {
+        display: inline-block;
+        line-height: 29px;
+        float:left;
+        padding-left:15px;
+        font-weight:bold;
+        text-indent:-100%;
+        opacity:0;
+        overflow:hidden;
+        transition:text-indent 0.3s, opacity 0.3s;
+    }
+    &:hover {
+        span {
+            text-indent: 0;
+            opacity:1;
+        }
+        img {
+            transform:scale(1.2);
+        }
+    }
+}
+
+nav.main-nav {
+    text-align:right;
+    ul {
+        margin:0;
+        padding:0;
+        list-style:none;
+        li {
+            display: inline-block;
+            margin-right:10px;
+        }
+    }
+    a {
+        color:$white;
+        text-decoration:none;
+        opacity:0.8;
+        transition:opacity 0.3s;
+        &:hover {
+            opacity:1;
+        }
+    }
 }

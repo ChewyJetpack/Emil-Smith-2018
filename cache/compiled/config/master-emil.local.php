@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1540384819,
-    'checksum' => 'add1f077dcc7e4fe2cfb2caeca50d861',
+    'timestamp' => 1540393621,
+    'checksum' => 'c0a722dd79608abda0b14a08912c6619',
     'files' => [
         'user/config' => [
             'media' => [
@@ -15,7 +15,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1540384819
+                'modified' => 1540385587
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -23,7 +23,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1540378014
+                'modified' => 1540388831
             ]
         ],
         'system/config' => [
@@ -45,7 +45,7 @@ return [
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1539042373
+                'modified' => 1540393617
             ]
         ],
         'user/plugins' => [
@@ -569,7 +569,7 @@ return [
             'salt' => 'o9ADteKqIbjnig'
         ],
         'site' => [
-            'title' => 'Emil Smith - Digital Design Portfolio',
+            'title' => 'Some website',
             'default_lang' => 'en',
             'author' => [
                 'name' => 'Emil',
@@ -665,7 +665,7 @@ return [
                     'twig' => false
                 ],
                 'twig_first' => false,
-                'never_cache_twig' => false,
+                'never_cache_twig' => true,
                 'events' => [
                     'page' => true,
                     'twig' => true

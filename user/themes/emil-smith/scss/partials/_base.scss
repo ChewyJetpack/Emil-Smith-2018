@@ -1,7 +1,7 @@
 html, body {
     margin:0;
     padding:0;
-    background:#000;
+    background:#0aa7ba;
     color:#fff;
     font-family: 'Roboto', sans-serif;
     font-size:18px;
@@ -11,6 +11,8 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', sans-serif;
     font-weight:700;
+    line-height:1em;
+    margin:0.3em 0 0.2em;
 }
 
 h1 {
@@ -23,7 +25,16 @@ h2 {
 
 h3 {
     font-size:28px;
-    font-weight: 400;
+    font-weight: 500;
+}
+
+a {
+    opacity:0.8;
+    transition:opacity 0.3s;
+    color:inherit;
+    &:hover, &:focus {
+        opacity: 1;
+    }
 }
 
 * {
