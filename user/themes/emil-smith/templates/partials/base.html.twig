@@ -13,6 +13,8 @@
     <link rel="icon" type="image/png" href="{{ url('theme://images/logo.png') }}" />
     <link rel="canonical" href="{{ page.url(true, true) }}" />
 
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700,400|Roboto:400,700" rel="stylesheet"> 
+
     {% block stylesheets %}
         {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', 99) %}
         {% do assets.addCss('theme://css-compiled/main.css', 98) %}
@@ -26,10 +28,10 @@
 
 {% endblock head%}
 </head>
-<body class="{{ page.header.body_classes }}">
+<body class="{{ page.header.body_classes }} gradient">
 
 {% block header %}
-    <div class="header">
+    <header class="header">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -45,7 +47,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </header>
 {% endblock %}
 
 {% block body %}
@@ -61,10 +63,7 @@
 {% endblock %}
 
 {% block footer %}
-    <div class="footer text-center">
-        <div class="wrapper padding">
-            <p><a href="http://getgrav.org">Grav</a> was <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by <a href="http://www.rockettheme.com">RocketTheme</a>.</p>
-        </div>
+    <div class="footer">
     </div>
 {% endblock %}
 

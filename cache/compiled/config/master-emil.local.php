@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1540378018,
-    'checksum' => 'ac9d89e13b86500d9cf28bdc01f47309',
+    'timestamp' => 1540384819,
+    'checksum' => 'add1f077dcc7e4fe2cfb2caeca50d861',
     'files' => [
         'user/config' => [
             'media' => [
@@ -15,7 +15,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1539042373
+                'modified' => 1540384819
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -569,18 +569,18 @@ return [
             'salt' => 'o9ADteKqIbjnig'
         ],
         'site' => [
-            'title' => 'Grav',
+            'title' => 'Emil Smith - Digital Design Portfolio',
             'default_lang' => 'en',
             'author' => [
-                'name' => 'Joe Bloggs',
-                'email' => 'joe@example.com'
+                'name' => 'Emil',
+                'email' => 'drkrepz@gmail.com'
             ],
             'taxonomies' => [
                 0 => 'category',
                 1 => 'tag'
             ],
             'metadata' => [
-                'description' => 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+                'description' => 'Emil Smith is a Digital Designer and Front End Developer from London, UK'
             ],
             'summary' => [
                 'enabled' => true,
