@@ -1,0 +1,11 @@
+email: drkrepz@gmail.com
+fullname: 'Emil Smith'
+title: 'Boss Man'
+state: enabled
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$NCNhsIyEobG9TJq4cCV6MeAcBYLL4XCYoo3b1Bd4NK6vg.ou6uQci
