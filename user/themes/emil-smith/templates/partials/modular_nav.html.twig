@@ -3,6 +3,7 @@
     {% macro pageLinkName(text) %}{{ text|lower|replace({' ':'_'}) }}{% endmacro %}
 
 <nav class="main-nav">
+<ul>
     {% for page in pages.children %}
             {% if page.visible %}
                 {% set current_page = (page.active or page.activeChild) ? 'current' : '' %}
@@ -34,5 +35,6 @@
                     </li>
         {% endif %}
     {% endfor %}
+    </ul>
 </nav>
 
