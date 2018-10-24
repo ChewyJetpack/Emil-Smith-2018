@@ -1,0 +1,44 @@
+{% macro pageLinkName(text) %}{{ text|lower|replace({' ':'_'}) }}{% endmacro %}
+
+<div class="module clever" id="{{ _self.pageLinkName(page.header.menu) }}">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+            {% for jobs in page.header.experience %}
+                {{ jobs.title }}
+                {{ jobs.css_class }}
+                {% for item in jobs.items %}
+                    {{ item.company }}
+                    {{ item.title }}
+                    {{ item.date }}
+                    {{ item.description }}
+                {% endfor %}
+            {% endfor %}
+            </div>
+            <div class="col-12">
+            {% for qualifications in page.header.education %}
+                {{ qualifications.title }}
+                {{ qualifications.css_class }}
+                {% for item in qualifications.items %}
+                    {{ item.institution }}
+                    {{ item.subject }}
+                    {{ item.date }}
+                    {{ item.qualification }}
+                {% endfor %}
+            {% endfor %}
+            </div>
+            <div class="col-12">
+            {% for skills in page.header.skills %}
+                {{ skills.title }}
+                {{ skills.css_class }}
+                {% for item in skills.items %}
+                    {{ item.subject }}
+                    {% for ability in item.abilities %}
+                        {{ ability.name }}
+                    {% endfor %}
+                {% endfor %}
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
