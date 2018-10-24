@@ -5,7 +5,26 @@ html, body {
     color:#fff;
     font-family: 'Roboto', sans-serif;
     font-size:18px;
-    line-height:1.8em;
+    line-height:1.6em;
+}
+
+body {
+    background:linear-gradient(-45deg, #ce3c87, #813cce, #0aa7ba, #0aba7e) fixed;
+    background-size:180% 180%;
+    animation: gradient 40s ease infinite;
+    background-position: 0% 50%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,7 +44,7 @@ h2 {
 
 h3 {
     font-size:28px;
-    font-weight: 500;
+    //font-weight: 500;
 }
 
 a {
@@ -43,4 +62,8 @@ a {
 
 img {
     max-width: 100%;
+}
+
+.container {
+    max-width:1440px;
 }

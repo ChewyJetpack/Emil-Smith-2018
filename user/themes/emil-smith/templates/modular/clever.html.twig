@@ -6,40 +6,46 @@
         <div class="col-12">
             {{ page.content }}
         </div>
-            <div class="col-12">
+            <div class="col-6">
             {% for jobs in page.header.experience %}
-                {{ jobs.title }}
-                {{ jobs.css_class }}
-                {% for item in jobs.items %}
-                    {{ item.company }}
-                    {{ item.title }}
-                    {{ item.date }}
-                    {{ item.description }}
-                {% endfor %}
-            {% endfor %}
-            </div>
-            <div class="col-12">
-            {% for qualifications in page.header.education %}
-                {{ qualifications.title }}
-                {{ qualifications.css_class }}
-                {% for item in qualifications.items %}
-                    {{ item.institution }}
-                    {{ item.subject }}
-                    {{ item.date }}
-                    {{ item.qualification }}
-                {% endfor %}
-            {% endfor %}
-            </div>
-            <div class="col-12">
-            {% for skills in page.header.skills %}
-                {{ skills.title }}
-                {{ skills.css_class }}
-                {% for item in skills.items %}
-                    {{ item.subject }}
-                    {% for ability in item.abilities %}
-                        {{ ability.name }}
+                <div class="clever-cat {{ jobs.css_class }}">
+                    <h2>{{ jobs.title }}</h2>
+                    {% for item in jobs.items %}
+                        <div class="clever-item job">
+                            <h3>{{ item.company }}</h3>
+                            <div class="title">{{ item.title }}</div>
+                            <div class="date">{{ item.date }}</div>
+                            <div class="description">{{ item.description }}</div>
+                        </div>
                     {% endfor %}
+                </div>
+            {% endfor %}
+            </div>
+            <div class="col-6">
+            {% for qualifications in page.header.education %}                
+                <div class="clever-cat {{ qualifications.css_class }}">
+                <h2>{{ qualifications.title }}</h2>
+                {% for item in qualifications.items %}
+                    <div class="clever-item qualification">
+                        <h3>{{ item.institution }}</h3>
+                        <div class="title">{{ item.subject }}</div>
+                        <div class="date">{{ item.date }}</div>
+                    </div>
                 {% endfor %}
+                </div>
+            {% endfor %}
+            {% for skills in page.header.skills %}            
+                <div class="clever-cat {{ skills.css_class }}">
+                <h2>{{ skills.title }}</h2>
+                {% for item in skills.items %}
+                    <div class="clever-item skill">
+                        <h3>{{ item.subject }}</h3>
+                        {% for ability in item.abilities %}
+                            <div class="title">{{ ability.name }}</div>
+                        {% endfor %}
+                    </div>
+                {% endfor %}
+                </div>
             {% endfor %}
             </div>
         </div>
