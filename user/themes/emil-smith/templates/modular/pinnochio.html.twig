@@ -1,3 +1,7 @@
+{% macro pageLinkName(text) %}{{ text|lower|replace({' ':'_'}) }}{% endmacro %}
+
+<div class="releases" id="{{ _self.pageLinkName(page.header.menu) }}">
+
 {% for release in page.header.releases %}
     {% if loop.index0 is even %}
     <div class="module release {{ release.css_class }}">
@@ -38,3 +42,5 @@
         </div>
     </div>
 {% endfor %}
+
+</div>

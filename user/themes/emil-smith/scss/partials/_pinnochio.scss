@@ -41,13 +41,14 @@
             background-clip: padding-box;
             box-shadow:rgba($black, 0.2) 0 0 20px;
             animation:floaty 5s ease infinite alternate;
-            transition: transform 0.4s 0.2s, top 0.4s 0.2s, left 0.4s 0.2s;
+            transition: transform 0.4s 0.2s, top 0.4s 0.2s, left 0.4s 0.2s, width 0.4s 0.4s;
             margin-top:-10px;
                 opacity:1;
                 z-index:1;
             img {
                 float:left;
                 opacity:0.8;
+                transition:opacity 0.4s;
             }
             &:after {
                 display: block;
@@ -64,13 +65,14 @@
         }
         &:hover {
             a {                
-                transform:translateY(-48%) translateX(-100%) perspective(1000px) rotate3d(0,1,0,-0deg);
+                transform:translateY(-48%) translateX(-100%) perspective(0) rotate3d(0,1,0,-0deg);
                 left:-15px;
+            width:100%;
                 img {
                     opacity:1;
                 }
                 &:nth-of-type(2n) {             
-                    transform:translateY(-48%) perspective(1000px) rotate3d(0,1,0,-0deg);
+                    transform:translateY(-48%) perspective(0) rotate3d(0,1,0,-0deg);
                     top:50%;
                     left:15px;
                 }
