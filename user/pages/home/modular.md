@@ -10,7 +10,6 @@ content:
         dir: asc
         custom:
             - _intro
-            - _about
             - _clever_veloceraptor
             - _pinnochio
 ---
