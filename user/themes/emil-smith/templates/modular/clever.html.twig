@@ -1,12 +1,12 @@
 {% macro pageLinkName(text) %}{{ text|lower|replace({' ':'_'}) }}{% endmacro %}
 
-<div class="module clever" id="{{ _self.pageLinkName(page.header.menu) }}">
+<div class="module clever light-bg" id="{{ _self.pageLinkName(page.header.menu) }}">
     <div class="container">
         <div class="row">
         <div class="col-12">
             {{ page.content }}
         </div>
-            <div class="col-6">
+            <div class="col-8">
             {% for jobs in page.header.experience %}
                 <div class="clever-cat {{ jobs.css_class }}">
                     <h2>{{ jobs.title }}</h2>
@@ -15,13 +15,13 @@
                             <h3>{{ item.company }}</h3>
                             <div class="title">{{ item.title }}</div>
                             <div class="date">{{ item.date }}</div>
-                            <div class="description">{{ item.description }}</div>
+                            <div class="description">{{ item.description | markdown }}</div>
                         </div>
                     {% endfor %}
                 </div>
             {% endfor %}
             </div>
-            <div class="col-6">
+            <div class="col-4">
             {% for qualifications in page.header.education %}                
                 <div class="clever-cat {{ qualifications.css_class }}">
                 <h2>{{ qualifications.title }}</h2>
@@ -45,6 +45,13 @@
                         {% endfor %}
                     </div>
                 {% endfor %}
+                </div>
+            {% endfor %}
+            {% for download in page.header.download %}            
+                <div class="clever-cat {{ download.css_class }}">
+                <h2>{{ download.title }}</h2>
+                <div class="description">{{ download.description | markdown }}</div>
+                <a href="{{ download.url }}" class="btn"><span>{{ download.cta }}</span></a>
                 </div>
             {% endfor %}
             </div>

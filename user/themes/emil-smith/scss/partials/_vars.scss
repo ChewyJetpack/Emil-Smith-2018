@@ -1,6 +1,11 @@
-$white:     #fff;
-$black:     #000;
-$blue:      #0aa7ba;
-$green:     #0aba7e;
-$pink:      #ce3c87;
-$purple:    #813cce;
+$white:         #fff;
+$black:         #222;
+$charcoal:      #666;
+$blue:          #0aa7ba;
+$green:         #0aba7e;
+$pink:          #ce3c87;
+$purple:        #813cce;
+$pastel_pink:   lighten($pink, 30%);
+$pastel_purple: lighten($purple, 30%);
+$pastel_green:  lighten($green, 30%);
+$pastel_blue:   lighten($blue, 30%);

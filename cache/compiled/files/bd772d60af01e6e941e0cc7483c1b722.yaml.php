@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/Users/EmilSmith/Documents/dev/emil-smith-2018/user/config/system.yaml',
-    'modified' => 1540388831,
+    'modified' => 1540455681,
     'data' => [
         'absolute_urls' => false,
         'home' => [
@@ -19,7 +19,7 @@ return [
             ]
         ],
         'cache' => [
-            'enabled' => true,
+            'enabled' => false,
             'check' => [
                 'method' => 'file'
             ],
