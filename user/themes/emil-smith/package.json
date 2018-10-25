@@ -46,7 +46,7 @@
     "Explorer >= 10"
   ],
   "dependencies": {
-    "baguettebox.js": "^1.11.0",
+    "glightbox": "^1.0.8",
     "gulp-sourcemaps": "^2.6.4"
   }
 }
