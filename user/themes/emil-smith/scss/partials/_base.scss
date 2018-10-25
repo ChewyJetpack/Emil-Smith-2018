@@ -48,6 +48,9 @@ img {
 .light-bg {    
     background:$white;
     color:$black;
+    h1, .title, .date {
+        color: $grey2;
+    }
     p {
         color:$charcoal;
     }
