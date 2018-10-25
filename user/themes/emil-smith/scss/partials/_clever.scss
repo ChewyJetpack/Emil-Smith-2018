@@ -1,11 +1,60 @@
+.clever {
+    .cv-title {
+        color:$blue;
+    }
+    .profile-img {
+        border-radius:50%;
+        transform:translateZ(1px) perspective(1000px) rotate3d(0,1,0,-10deg);
+        background-clip: padding-box;
+        box-shadow:rgba($black, 0.06) 0 0 20px;
+    }
+    transition:all 0.3s 0.3s;
+    overflow:hidden;
+    &:before {
+        width:0;
+        height:0;
+        border-radius:50%;
+        content:"";
+        display:block;
+        position:absolute;
+        bottom:0;
+        right:0;
+        transform:translate(50%,50%);
+        background:$white;
+        transition:all 0.5s;
+    }
+    &.active {
+        color:$black;
+        background:$white;
+        h1 {
+            color:$blue;
+        }
+        &:before {
+            width:400%;
+            height:400%;
+        }
+    }
+    &.dark-bg {
+        h1 {
+            color:$pink;
+        }
+    }
+}
+
 .clever-cat {
-    padding-top:60px;
+    padding-top:45px;
+    h2 {
+        margin:0 0 30px;
+    }
 }
 
 .clever-item {
-    margin-top: 60px;
-    border-left:solid 2px $white;
+    margin-bottom: 30px;
+    border-left:solid 4px $pink;
     padding-left:20px;
+    &:last-of-type {
+        margin:0;
+    }
     .title {
         font-weight:700;
     }
@@ -15,9 +64,11 @@
     h3 {
         //margin-bottom:15px;
     }
+    &.qualification {
+        border-color:$blue;
+    }
     &.skill {
-        //border:none;
-        //padding:0;
+        border-color:$green;
         .title {
             display: inline-block;
             margin-right:5px;

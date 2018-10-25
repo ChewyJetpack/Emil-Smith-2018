@@ -1,0 +1,96 @@
+.release {
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+    justify-content: center;
+    overflow:hidden;
+    .gallery {
+        padding-top:15px;
+        a {
+            display: block;
+            opacity:1;
+            position: relative;
+            transition:top 0.3s, box-shadow 0.3s;
+            top:0;
+            margin-bottom:30px;
+            box-shadow:rgba($black, 0.2) 0 0 10px;
+            &:hover {
+                top:-5px;
+                box-shadow:rgba($black, 0.2) 0 5px 10px;
+            }
+            img {
+                float:left;
+            }
+            &:after {
+                display: block;
+                clear:both;
+                float:none;
+                content:"";
+            }
+        }
+    }
+    .feature-imgs {
+        a {
+            position: absolute;
+            top:50%;
+            left:0%;
+            width:90%;
+            overflow:hidden;
+            transform:translateZ(1px) translateY(-48%) perspective(1000px) rotate3d(0,1,0,-10deg);
+            background-clip: padding-box;
+            box-shadow:rgba($black, 0.2) 0 0 20px;
+            animation:floaty 5s ease infinite alternate;
+            transition: transform 0.4s 0.2s, top 0.4s 0.2s, left 0.4s 0.2s, width 0.4s 0.4s;
+            margin-top:-10px;
+                opacity:1;
+                z-index:1;
+            img {
+                float:left;
+                opacity:0.8;
+                transition:opacity 0.4s;
+            }
+            &:after {
+                display: block;
+                clear:both;
+                float:none;
+                content:"";
+            }
+            &:nth-of-type(2n) {
+                left:10%;
+                top:60%;
+                z-index:0;
+                animation:floaty 5s infinite alternate 1s;
+            }
+        }
+        &:hover {
+            a {                
+                transform:translateY(-48%) translateX(-100%) perspective(0) rotate3d(0,1,0,-0deg);
+                left:-15px;
+            width:100%;
+                img {
+                    opacity:1;
+                }
+                &:nth-of-type(2n) {             
+                    transform:translateY(-48%) perspective(0) rotate3d(0,1,0,-0deg);
+                    top:50%;
+                    left:15px;
+                }
+            }
+        }
+    }
+    &.dark-bg {
+        h1 {
+            color:$blue;
+        }
+    }
+}
+
+@keyframes floaty {
+    0% {
+        margin-top:-10px;
+    }
+    100% {
+        margin-top:10px;
+    }
+}

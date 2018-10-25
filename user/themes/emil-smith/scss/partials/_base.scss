@@ -8,25 +8,6 @@ html, body {
     line-height:1.6em;
 }
 
-body {
-    background:linear-gradient(-45deg, $pink, $purple, $blue, $green) fixed;
-    background-size:180% 180%;
-    animation: gradient 40s ease infinite;
-    //background-position: 0% 50%;
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', sans-serif;
     font-weight:700;
@@ -64,6 +45,88 @@ img {
     max-width: 100%;
 }
 
-.container {
-    max-width:1440px;
+.light-bg {    
+    background:$white;
+    color:$black;
+    h1, .title, .date {
+        color: $grey2;
+    }
+    p {
+        color:$charcoal;
+    }
+    .btn {        
+        background:linear-gradient(-45deg, $purple, $blue);
+        background-size:180% 180%;
+        animation: gradient 40s ease infinite;
+        opacity:0.9;
+        transition:opacity 0.3s, box-shadow 0.3s;
+        span {
+            background:$white;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            transition:opacity 0.3s;
+        }
+        &:hover {
+            background:linear-gradient(-45deg, $purple, $blue);
+            background-size:180% 180%;
+            animation: gradient 40s ease infinite;
+            opacity:1;
+            span {      
+            }
+        }
+    }
+}
+
+.dark-bg {    
+    background:linear-gradient(-45deg, darken($blue, 27%), $black, darken($purple, 40%));
+    background-size:150% 150%;
+    animation: gradient 20s ease infinite;
+    color:$white;
+    p {
+        color:$grey;
+    }
+    h1, .title, .date {
+        color: $grey2;
+    }
+}
+
+.colour-bg {
+    background:linear-gradient(-45deg, $pink, $purple, $blue, $green) fixed;
+    background-size:180% 180%;
+    animation: gradient 40s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.btn {
+    box-shadow: rgba(black, 0.1) 0px 4px 0px;
+    color:$purple;
+    display: inline-block;
+    padding:10px 20px;
+    border-radius:5px;
+    min-width:150px;
+    text-align:center;
+    text-decoration:none;
+    font-weight:bold;
+    position: relative;
+    overflow:hidden;
+    background:rgba($white, 0.9);
+    opacity:1;
+    font-size:20px;
+    transition:background 0.3s, box-shadow 0.3s;
+    margin-top:15px;
+    &:hover {
+        background:rgba($white, 1);
+        box-shadow: rgba(black, 0.1) 0px 7px 0px;
+    }
 }

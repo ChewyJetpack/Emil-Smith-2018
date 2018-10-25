@@ -17,18 +17,20 @@
 
     {% block stylesheets %}
         {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', 99) %}
-        {% do assets.addCss('theme://css-compiled/main.css', 98) %}
+        {% do assets.addCss('theme://node_modules/glightbox/dist/css/glightbox.min.css', 98) %}
+        {% do assets.addCss('theme://dist/css/main.min.css', 98) %}
     {% endblock %}
     {{ assets.css() }}
 
     {% block javascripts %}
-        {% do assets.addJs('jquery', 100) %}
+        {% do assets.addJs('theme://node_modules/glightbox/dist/js/glightbox.min.js', {'group':'bottom'}) %}
+        {% do assets.addJs('theme://dist/js/all.js', {'group':'bottom'}) %}
     {% endblock %}
     {{ assets.js() }}
 
 {% endblock head%}
 </head>
-<body class="{{ page.header.body_classes }}">
+<body class="{{ page.header.body_classes }} colour-bg">
 
 {% block header %}
     <header class="header">
