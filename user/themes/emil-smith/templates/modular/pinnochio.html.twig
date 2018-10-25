@@ -28,7 +28,9 @@
                 <div class="col-6">
                     <div class="feature-imgs">
                         {% for feature_img in release.feature_imgs %}
-                            <img class="feature-img" src="{{ feature_img }}" alt="{{ release.title }}" />
+                            <a href="{{ feature_img }}" class="gallery-{{ release.css_class }}" data-type="image">
+                                <img src="{{ feature_img }}" alt="{{ release.title }}" />
+                            </a>
                         {% endfor %}
                     </div>
                 </div>
