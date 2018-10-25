@@ -1,8 +1,8 @@
 ---
 title: Intro
-menu: my dude
+menu: Home
 ---
 
-# Intro
+# Bangers
 
 This is some content

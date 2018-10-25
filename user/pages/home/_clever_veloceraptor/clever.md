@@ -1,58 +1,43 @@
 ---
-title: CV
-menu: cv
+title: Music
+menu: Music
 
 experience:
-    - title: Experience
+    - title: Drum and Bass
       css_class: experience
       items:
-        - company: BPL Marketing
-          title: Digital Designer (mid-senior level)
-          date: July 2015 - Present
-          description: Helping to build a digital, web-focused department, to bring web design and development in-house. Working on campaign concepts through to delivery, designing, building and maintaining both small and large web projects for a varied range of clients. Making decisions on how to accomplish briefs, including wireframing, designing, writing technical specifications and brand guidelines.
-        - company: Twotwentyseven
-          title: Digital Designer (mid level)
-          date: June 2013 - July 2015
-          description: Working as part of a small agency, creating websites for a range of clients. Helping to develop an in-house product; a CMS for restaurants to easily manage content and updating menus. Designing and building eCommerce websites based on Shopify, using the Liquid templating language.
-        - company: Amobee
-          title: Digital Designer (junior level)
-          date: July 2012 - July 2013
-          description: Designing mobile display advertising and rich media experiences for global campaigns, alongside a small team of designers. Experimenting with concepts such as augmented reality, developing efficient solutions to streamline internal processes and looking for ways to improve our creative offering with custom code.
+        - company: Lorem Ipsum
+          title: Lorem ipsum dolor sit amet
+          date: Dolor sit amet
+          description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sapien ante, gravida quis neque et, placerat sodales nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras interdum iaculis ipsum, at tincidunt nisl pellentesque ut. Praesent tincidunt diam arcu, eget pretium mauris porttitor at. Nullam et consequat risus, sed ultricies diam. Praesent pretium, elit nec lobortis feugiat, purus arcu molestie massa, nec dapibus tortor arcu eu sapien.
+        - company: Lorem Ipsum
+          title: Lorem ipsum dolor sit amet
+          date: Dolor sit amet
+          description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sapien ante, gravida quis neque et, placerat sodales nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras interdum iaculis ipsum, at tincidunt nisl pellentesque ut. Praesent tincidunt diam arcu, eget pretium mauris porttitor at. Nullam et consequat risus, sed ultricies diam. Praesent pretium, elit nec lobortis feugiat, purus arcu molestie massa, nec dapibus tortor arcu eu sapien.
 
 education:
-    - title: Education
+    - title: UK Garage
       css_class: education
       items:
-        - institution: University of the Arts, London
-          date: 2009 - 2012
-          subject: Digital Media Design BA (Hons)
+        - institution: Lorem ipsum dolor sit amet
+          date: Lorem ipsum dolor sit amet
+          subject: Lorem ipsum dolor sit amet
 
 skills:
-    - title: Skills
+    - title: Dubstep
       css_class: skills
+      description: 
       items:
-        - subject: Design
+        - subject: Best MCs
           abilities:
-            - name: Adobe Photoshop
-            - name: Adobe Illustrator
-            - name: Adobe Experience Design (XD)
-            - name: Adobe After Effects
-            - name: Figma
-        - subject: Development
+            - Skibbadee
+            - Shabbadee
+            - Eksman
+            - MC GQ
+        - subject: Worst terminology to use in 2018
           abilities:
-            - name: HTML
-            - name: CSS
-            - name: Javascript
-            - name: jQuery
-            - name: SCSS
-            - name: LESS
-            - name: Gulp
-            - name: Bower
-            - name: Yarn
-            - name: node.js
-            - name: Vue.js
-            - name: Git
-            - name: npm
+            - Junglist
+            - Bo (Boh)
 ---
 
-# CV
+# Music

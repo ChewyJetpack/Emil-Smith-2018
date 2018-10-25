@@ -1,18 +1,18 @@
 html, body {
     margin:0;
     padding:0;
-    background:#0aa7ba;
-    color:#fff;
+    background:$blue;
+    color:$white;
     font-family: 'Roboto', sans-serif;
     font-size:18px;
     line-height:1.6em;
 }
 
 body {
-    background:linear-gradient(-45deg, #ce3c87, #813cce, #0aa7ba, #0aba7e) fixed;
+    background:linear-gradient(-45deg, $pink, $purple, $blue, $green) fixed;
     background-size:180% 180%;
     animation: gradient 40s ease infinite;
-    background-position: 0% 50%;
+    //background-position: 0% 50%;
 }
 
 @keyframes gradient {
