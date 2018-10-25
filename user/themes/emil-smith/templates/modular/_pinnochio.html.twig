@@ -1,7 +1,11 @@
 <h1>{{ page.content }}</h1>
 
 {% for release in page.header.releases %}
+    {% if loop.index0 is even %}
     <div class="module release {{ release.css_class }}">
+    {% else %}    
+    <div class="module release {{ release.css_class }} dark-bg">
+    {% endif %}
         <div class="container">
             <div class="row">
                 <div class="col-6">
@@ -11,9 +15,22 @@
                             {{ item | markdown }}
                         {% endfor %}
                     </div>
-                    {% for image in release.images %}
-                        {{ image }}
-                    {% endfor %}
+                    <div class="gallery">
+                        <div class="row">
+                        {% for image in release.images %}
+                            <div class="col-3">
+                                <img class="gallery-img" src="{{ image }}" alt="{{ release.title }}" />
+                            </div>
+                        {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="feature-imgs">
+                        {% for feature_img in release.feature_imgs %}
+                            <img class="feature-img" src="{{ feature_img }}" alt="{{ release.title }}" />
+                        {% endfor %}
+                    </div>
                 </div>
             </div>
         </div>

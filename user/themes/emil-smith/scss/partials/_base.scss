@@ -74,6 +74,19 @@ img {
     }
 }
 
+.dark-bg {    
+    background:linear-gradient(-45deg, darken($blue, 27%), $black, darken($purple, 40%));
+    background-size:150% 150%;
+    animation: gradient 20s ease infinite;
+    color:$white;
+    p {
+        color:$grey;
+    }
+    h1, .title, .date {
+        color: $grey2;
+    }
+}
+
 .colour-bg {
     background:linear-gradient(-45deg, $pink, $purple, $blue, $green) fixed;
     background-size:180% 180%;
@@ -94,7 +107,7 @@ img {
 
 .btn {
     box-shadow: rgba(black, 0.1) 0px 4px 0px;
-    color:rgba($black, 0.8);
+    color:$purple;
     display: inline-block;
     padding:10px 20px;
     border-radius:5px;
@@ -109,17 +122,6 @@ img {
     font-size:20px;
     transition:background 0.3s, box-shadow 0.3s;
     margin-top:15px;
-    span {
-        display: block;
-        background:linear-gradient(-45deg, $pink, $purple, $blue, $green);
-        background-attachment:fixed;
-        background-size:180% 180%;
-        animation: gradient 40s ease infinite;
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-        position: relative;
-        z-index:1;
-    }
     &:hover {
         background:rgba($white, 1);
         box-shadow: rgba(black, 0.1) 0px 7px 0px;

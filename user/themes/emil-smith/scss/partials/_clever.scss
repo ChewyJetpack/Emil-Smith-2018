@@ -25,6 +25,11 @@
             height:400%;
         }
     }
+    &.dark-bg {
+        h1 {
+            color:$pink;
+        }
+    }
 }
 
 .clever-cat {
