@@ -1,5 +1,11 @@
 header {
     padding:20px 0;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:2;
+    box-shadow: rgba($black, 0.4) 0 0 20px;
 }
 
 .logo {

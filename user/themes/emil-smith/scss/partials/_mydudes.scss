@@ -8,15 +8,29 @@
     .dude-content {
         height:100%;
         display: flex;
-        align-items:center;
+        align-items:left;
+        justify-content: center;
+        flex-direction:column;
     }
     h1 {
         margin-bottom:60px;
     }
     .dude-wrap {
         margin-top:30px;
-        img {
-            filter: grayscale(100%);
-        }
+        padding-bottom:75%;
+        background:$white;
+        position: relative;
+        mask-repeat:no-repeat;
+        mask-size:contain;
+        mask-position:center center;
+    }
+}
+
+@keyframes dudeFloat {
+    0% {
+        transform:translateY(-7px);
+    }
+    100% {
+        transform:translateY(7px);
     }
 }
