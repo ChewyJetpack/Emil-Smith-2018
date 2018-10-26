@@ -13,4 +13,5 @@ content:
             - _clever_veloceraptor
             - _my_dudes
             - _pinnochio
+            - _contact
 ---

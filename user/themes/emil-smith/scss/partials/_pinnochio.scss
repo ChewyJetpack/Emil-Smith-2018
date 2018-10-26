@@ -49,8 +49,6 @@
                 top:0;
                 left:0;
                 width:100%;
-                opacity:0.8;
-                transition:opacity 0.4s;
                 transform:translateZ(1px) translateY(-2%);
                 animation:floaty 4s ease infinite alternate;
                 box-shadow:rgba($black, 0.1) 10px 10px 20px;

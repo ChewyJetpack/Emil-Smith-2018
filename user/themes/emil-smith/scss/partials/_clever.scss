@@ -41,14 +41,14 @@
 .clever-cat {
     padding-top:45px;
     h2 {
-        margin:0 0 30px;
+        margin:0 0 45px;
     }
 }
 
 .clever-item {
-    margin-bottom: 30px;
-    border-left:solid 4px $pastel_pink;
-    padding-left:20px;
+    margin-bottom: 45px;
+    border-left:solid 4px rgba($pink, 0.4);
+    padding-left:26px;
     &:last-of-type {
         margin:0;
     }
@@ -60,10 +60,10 @@
         margin-top:15px;
     }
     &.qualification {
-        border-color:$pastel_blue;
+        border-color:rgba($blue, 0.4);
     }
     &.skill {
-        border-color:$pastel_green;
+        border-color:rgba($purple, 0.4);
         .title {
             display: inline-block;
             margin-right:5px;
