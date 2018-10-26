@@ -3,16 +3,16 @@
 <div class="module clever light-bg" id="{{ _self.pageLinkName(page.header.menu) }}">
     <div class="container">
         <div class="row">
-            <div class="col-8">
+            <div class="col-12 col-sm-8">
                 <h1 class="cv-title">{{ page.header.title }}</h1>
                 {{ page.content | markdown }}
             </div>
-            <div class="col-4">
+            <div class="col-12 col-sm-4">
                 <img class="profile-img" src="{{ page.header.image }}" alt="{{ page.header.title }}">
             </div>
         </div>
         <div class="row">
-            <div class="col-8">
+            <div class="col-12 col-lg-8">
             {% for jobs in page.header.experience %}
                 <div class="clever-cat {{ jobs.css_class }}">
                     <h2>{{ jobs.title }}</h2>
@@ -27,7 +27,7 @@
                 </div>
             {% endfor %}
             </div>
-            <div class="col-4">
+            <div class="col-12 col-lg-4">
             {% for qualifications in page.header.education %}                
                 <div class="clever-cat {{ qualifications.css_class }}">
                 <h2>{{ qualifications.title }}</h2>

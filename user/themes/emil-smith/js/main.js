@@ -31,3 +31,24 @@ navItems.forEach(navItem => {
         window.scrollTo({ top: location, behavior: "smooth" });
     })
 });
+
+const navToggle = document.getElementById('navToggle');
+const nav = document.querySelector('.main-nav');
+
+navToggle.addEventListener('click',(e) => {
+    e.preventDefault();
+    if (navToggle.classList.contains('active')) {
+        navToggle.classList.remove("active");
+        nav.classList.remove("active");
+    } else {
+        navToggle.classList.add("active");
+        nav.classList.add("active");
+    }
+})
+
+document.body.addEventListener("click",(e) => {
+    if (!e.target.matches("#navToggle", ".main-nav") && navToggle.classList.contains("active")) {
+      navToggle.classList.remove("active");
+      nav.classList.remove("active");
+    }
+});

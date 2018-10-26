@@ -50,7 +50,7 @@ img {
     background:linear-gradient(-45deg, lighten($green, 60%) 5%, $white 50%);
     background-position:fixed;
     color:$black;
-    h1, .title, .date {
+    .title, .date {
         color: $grey_dark;
     }
     p {
@@ -90,6 +90,12 @@ img {
     h1, .title, .date {
         color: $white;
     }
+}
+
+.goverlay {    
+    background:linear-gradient(-45deg, rgba(darken($blue, 27%),0.9), rgba($black,0.9), rgba(darken($purple, 40%),0.9));
+    background-size:150% 150%;
+    //animation: gradient 20s ease infinite;
 }
 
 .colour-bg {
