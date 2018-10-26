@@ -14,10 +14,9 @@
             transition:top 0.3s, box-shadow 0.3s;
             top:0;
             margin-bottom:30px;
-            box-shadow:rgba($black, 0.2) 0 0 10px;
             &:hover {
                 top:-5px;
-                box-shadow:rgba($black, 0.2) 0 5px 10px;
+                box-shadow:rgba($black, 0.1) 0 5px 10px;
             }
             img {
                 float:left;
@@ -31,24 +30,30 @@
         }
     }
     .feature-imgs {
+        height:100%;
         a {
             position: absolute;
             top:50%;
             left:0%;
             width:90%;
-            overflow:hidden;
-            transform:translateZ(1px) translateY(-48%) perspective(1000px) rotate3d(0,1,0,-10deg);
+            padding-bottom:100%;
+            overflow:visible;
+            transform:translateZ(1px) translateY(-50%) perspective(1000px) rotate3d(0,1,0,-10deg);
             background-clip: padding-box;
-            box-shadow:rgba($black, 0.2) 0 0 20px;
-            animation:floaty 5s ease infinite alternate;
             transition: transform 0.4s 0.2s, top 0.4s 0.2s, left 0.4s 0.2s, width 0.4s 0.4s;
             margin-top:-10px;
-                opacity:1;
-                z-index:1;
+            opacity:1;
+            z-index:1;
             img {
-                float:left;
+                position: absolute;
+                top:0;
+                left:0;
+                width:100%;
                 opacity:0.8;
                 transition:opacity 0.4s;
+                transform:translateY(-2%);
+                animation:floaty 4s ease infinite alternate;
+                box-shadow:rgba($black, 0.1) 0 0 20px;
             }
             &:after {
                 display: block;
@@ -60,19 +65,21 @@
                 left:10%;
                 top:60%;
                 z-index:0;
-                animation:floaty 5s infinite alternate 1s;
+                img {
+                    animation:floaty 4s ease 1.5s infinite alternate;
+                }
             }
         }
         &:hover {
             a {                
-                transform:translateY(-48%) translateX(-100%) perspective(0) rotate3d(0,1,0,-0deg);
+                transform:translateY(-50%) translateX(-100%) perspective(0) rotate3d(0,1,0,-0deg);
                 left:-15px;
             width:100%;
                 img {
                     opacity:1;
                 }
                 &:nth-of-type(2n) {             
-                    transform:translateY(-48%) perspective(0) rotate3d(0,1,0,-0deg);
+                    transform:translateY(-50%) perspective(0) rotate3d(0,1,0,-0deg);
                     top:50%;
                     left:15px;
                 }
@@ -88,9 +95,9 @@
 
 @keyframes floaty {
     0% {
-        margin-top:-10px;
+        transform:translateY(-2%);
     }
     100% {
-        margin-top:10px;
+        transform:translateY(2%);
     }
 }
