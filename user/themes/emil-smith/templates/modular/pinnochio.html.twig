@@ -3,7 +3,7 @@
 <div class="releases" id="{{ _self.pageLinkName(page.header.menu) }}">
 
 {% for release in page.header.releases %}
-    {% if loop.index0 is even %}
+    {% if loop.index0 is odd %}
     <div class="module release {{ release.css_class }}">
     {% else %}    
     <div class="module release {{ release.css_class }} light-bg">

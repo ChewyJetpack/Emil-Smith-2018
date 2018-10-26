@@ -11,5 +11,6 @@ content:
         custom:
             - _intro
             - _clever_veloceraptor
+            - _my_dudes
             - _pinnochio
 ---

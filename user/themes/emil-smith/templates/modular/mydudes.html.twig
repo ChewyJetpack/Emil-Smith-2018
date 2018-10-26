@@ -1,0 +1,27 @@
+{% macro pageLinkName(text) %}{{ text|lower|replace({' ':'_'}) }}{% endmacro %}
+
+<div class="module my-dudes" id="{{ _self.pageLinkName(page.header.menu) }}">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="dude-content">
+                    <h1>{{ page.header.title }}</h1>
+                    {{ page.content | markdown }}
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                {% for dude in page.header.dudes %}
+                    <div class="col-4">
+                        <div class="dude-wrap">
+                            <img src="images/{{ dude.dude }}" alt="{{ dude.dude_name }}">
+                        </div>
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

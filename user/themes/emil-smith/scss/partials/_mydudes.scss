@@ -1,0 +1,22 @@
+.my-dudes {
+    min-height:50vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    .dude-content {
+        height:100%;
+        display: flex;
+        align-items:center;
+    }
+    h1 {
+        margin-bottom:60px;
+    }
+    .dude-wrap {
+        margin-top:30px;
+        img {
+            filter: grayscale(100%);
+        }
+    }
+}

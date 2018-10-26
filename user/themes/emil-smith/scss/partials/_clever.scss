@@ -1,12 +1,9 @@
 .clever {
-    .cv-title {
-        color:$blue;
-    }
     .profile-img {
-        border-radius:50%;
+        //border-radius:50%;
         transform:translateZ(1px) perspective(1000px) rotate3d(0,1,0,-10deg);
         background-clip: padding-box;
-        box-shadow:rgba($black, 0.06) 0 0 20px;
+        box-shadow:rgba($black, 0.06) 10px 10px 20px;
     }
     transition:all 0.3s 0.3s;
     overflow:hidden;
@@ -50,25 +47,23 @@
 
 .clever-item {
     margin-bottom: 30px;
-    border-left:solid 4px $pink;
+    border-left:solid 4px $pastel_pink;
     padding-left:20px;
     &:last-of-type {
         margin:0;
     }
     .title {
         font-weight:700;
+        color:$charcoal;
     }
     .description {
         margin-top:15px;
     }
-    h3 {
-        //margin-bottom:15px;
-    }
     &.qualification {
-        border-color:$blue;
+        border-color:$pastel_blue;
     }
     &.skill {
-        border-color:$green;
+        border-color:$pastel_green;
         .title {
             display: inline-block;
             margin-right:5px;

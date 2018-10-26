@@ -47,6 +47,8 @@ img {
 
 .light-bg {    
     background:$white;
+    background:linear-gradient(-45deg, lighten($green, 60%) 5%, $white 50%);
+    background-position:fixed;
     color:$black;
     h1, .title, .date {
         color: $grey_dark;
