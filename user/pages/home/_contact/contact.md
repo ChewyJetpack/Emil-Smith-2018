@@ -5,8 +5,8 @@ menu: Get in touch
 
 # Get fucked
 
-## This is some content. [Tell me shit](mailto:hello@emilsmith.co.uk).
+### Email: [hello@emilsmith.co.uk](mailto:hello@emilsmith.co.uk).
 
-## This is some content. [Tell me shit](mailto:hello@emilsmith.co.uk).
+### Phone: [+447503111160](mailto:+447503111160).
 
 ### Sniff my source on [Github](lol)
