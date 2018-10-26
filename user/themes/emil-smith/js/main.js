@@ -10,7 +10,7 @@ const navItems = document.querySelectorAll('.smoothscroll');
 navItems.forEach(navItem => {
     const elemId = navItem.getAttribute("href");
     const elem = document.querySelector(elemId);
-    const topPos = elem.getBoundingClientRect().top - 69;
+    const topPos = elem.getBoundingClientRect().top - 47;
     console.log(elem, topPos);
     navItem.addEventListener("click", function(e) {
         e.preventDefault();
