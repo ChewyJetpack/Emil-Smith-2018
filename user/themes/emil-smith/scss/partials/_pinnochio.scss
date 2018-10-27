@@ -115,6 +115,18 @@
     }
 }
 
+.gslider {
+    .gslide-image {
+        overflow-y:auto;
+        max-height:90vh;
+        align-items:start;
+        img {
+            max-height:none;
+            max-width:80vw;
+        }
+    }
+}
+
 @keyframes floaty {
     0% {
         transform:translateZ(1px) translateY(-2%);

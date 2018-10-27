@@ -5,7 +5,7 @@ menu: Get in touch
 
 # Get in touch
 
-### Email: [hello@emilsmith.co.uk](mailto:hello@emilsmith.co.uk).
+### Email: [hi@emilsmith.co.uk](mailto:hi@emilsmith.co.uk).
 
 ### Phone: [+447503111160](mailto:+447503111160).
 

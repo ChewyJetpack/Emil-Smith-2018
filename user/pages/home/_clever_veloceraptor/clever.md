@@ -2,7 +2,7 @@
 title: CV
 menu: CV
 
-image: http://placehold.it/500x500.jpg
+image: images/emil.jpg
 
 experience:
     - title: Experience

@@ -3,6 +3,19 @@ title: Portfolio
 menu: portfolio
 
 releases:
+    - title: Coravin
+      css_class: coravin
+      description: 
+        - Coravin is a US based start up, offering an innovative product which enables people to pour wine from the bottle without removing the cork, using a specialised needle to pierce the cork and replace the lost volume of wine with compressed argon gas.
+        - After designing a number of campaign materials for Coravin, they enlisted BPL to design and build a number of international brochure websites to showcase their products in markets in which they don’t operate an eCommerce business. I designed the entire brochure site in way that I feel showcases the product, putting it front and centre, enhanced with imagery and interactivity.
+        - The site is based on a Wordpress back end, and uses npm to build front end assets.
+      images:
+        - images/cor3.jpg
+        - images/cor4.jpg
+        - images/cor5.jpg
+      feature_imgs:
+        - images/cor1.jpg
+        - images/cor2.jpg
     - title: Three & Tinder
       css_class: three
       description: 
@@ -16,45 +29,27 @@ releases:
       feature_imgs:
         - images/three2.jpg
         - images/three3.jpg
-    - title: Coravin
-      css_class: banger
+    - title: Peng Dominion
+      css_class: pengdominion
       description: 
-        - Coravin is a US based start up, offering an innovative product which enables people to pour wine from the bottle without removing the cork, using a specialised needle to pierce the cork and replace the lost volume of wine with compressed argon gas.
-        - After designing a number of campaign materials for Coravin, they enlisted BPL to design and build a number of international brochure websites to showcase their products in markets in which they don’t operate an eCommerce business. I designed the entire brochure site in way that I feel showcases the product, putting it front and centre, enhanced with imagery and interactivity.
-        - The site is based on a Wordpress back end, and uses npm to build front end assets.
+        - Peng Dominion is a labour of love - I started it as a vessel through which to release my own music, to free myself from the limitations that come with releasing music through record labels. I also release music by artists whose work I find fun and inspiring. 
+        - I design all the artwork and promotional videos and even master all the releases by myself.
       images:
-        - images/cor3.jpg
-        - images/cor4.jpg
-        - images/cor5.jpg
+        - images/peng3.jpg
+        - images/peng4.jpg
       feature_imgs:
-        - images/cor1.jpg
-        - images/cor2.jpg
+        - images/peng1.jpg
+        - images/peng2.jpg
     - title: Royal British Legion
       css_class: rbl
       description: 
         - The Royal British Legion is a long-standing client at BPL Marketing. After inheriting the website from their previous, outsourced development team, I took on the task of refactoring the entire front end of the site. As part of this, I made large contributions to the Royal British Legion’s digital brand guidelines and designed and built a UI kit for their current and future web projects; the RBL Boilerplate. The Boilerplate consists of all necessary UI elements for the website, and was built and maintained in isolation from the main website, so it can serve as a dependency for the main site, as well as other satellite projects.
       images:
-        - http://placehold.it/301x301.jpg
-        - http://placehold.it/302x302.jpg
-        - http://placehold.it/303x303.jpg
+        - images/rbl3.jpg
+        - images/rbl4.jpg
       feature_imgs:
-        - http://placehold.it/960x960.jpg
-        - http://placehold.it/960x960.jpg
-    - title: Everyone Remembered
-      css_class: eor
-      description: 
-        - Everyone Remembered is a campaign undertaken by the Royal British Legion with the goal of commemorating each and every soldier who died in WW1, through user generated commemorations. Based on a database of 1,060,174 soldiers, users were able to search through names, regiments and locations to find lost relatives or discover those who may have been forgotten, and “remember” them, by way of placing a poppy on an interactive map, leaving a short commemoration and even uploading photographs. 
-
-        - The project was initially designed out of house at BPL, and subsequently redesigned by me, and integrated with the RBL Boilerplate. Over the last few years, I have also worked on refining the UX of the site through testing and reworking various user flows.
-
-        - The site as it currently stands is not entirely my design, as the client has chosen to move some design work in-house, but I am very happy with my contributions to the project.
-      images:
-        - images/eor3.jpg
-        - images/eor4.jpg
-        - images/eor5.jpg
-      feature_imgs:
-        - images/eor1.jpg
-        - images/eor2.jpg
+        - images/rbl1.jpg
+        - images/rbl2.jpg
     - title: Sypro
       css_class: sypro
       description: 
@@ -66,17 +61,21 @@ releases:
       feature_imgs:
         - images/syp1.jpg
         - images/syp2.jpg
-    - title: Peng Dominion
-      css_class: pengdominion
+    - title: Everyone Remembered
+      css_class: eor
       description: 
-        - Peng Dominion is a labour of love - I started it as a vessel through which to release my own music, to free myself from the limitations that come with releasing music through record labels. I also release music by artists whose work I find fun and inspiring. 
-        - I design all the artwork and even master all the releases by myself.
+        - Everyone Remembered is a campaign undertaken by the Royal British Legion with the goal of commemorating each and every soldier who died in WW1, through user generated commemorations. Based on a database of 1,060,174 soldiers, users were able to search through names, regiments and locations to find lost relatives or discover those who may have been forgotten, and “remember” them, by way of placing a poppy on an interactive map, leaving a short commemoration and even uploading photographs. 
+
+        - I designed the full site and integrated the RBL Boilerplate. Over the last few years, I have also worked on refining the UX of the site through testing and reworking various user flows.
+
+        - Some design work has since been moved in-house at the Royal British Legion, but I am very happy with my contributions to the project.
       images:
-        - images/peng3.jpg
-        - images/peng4.jpg
+        - images/eor3.jpg
+        - images/eor4.jpg
+        - images/eor5.jpg
       feature_imgs:
-        - images/peng1.jpg
-        - images/peng2.jpg
+        - images/eor1.jpg
+        - images/eor2.jpg
 ---
 
 # Releases

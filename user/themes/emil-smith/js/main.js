@@ -14,7 +14,7 @@ navItems.forEach(navItem => {
     const headerHeight = header.clientHeight;
     const elemId = navItem.getAttribute("href");
     const target = document.querySelector(elemId);
-    const getElemDistance = function (elem) {
+    const getElemDistance = (elem) => {
         let location = 0;
         if (elem.offsetParent) {
             do {
@@ -24,7 +24,7 @@ navItems.forEach(navItem => {
         }
         return location >= 0 ? location : 0;
     }
-    navItem.addEventListener('click', function(e) {
+    navItem.addEventListener('click', (e) => {
         e.preventDefault();
         let location = getElemDistance(target) - headerHeight;
         console.log(location);
