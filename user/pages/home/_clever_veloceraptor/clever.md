@@ -69,6 +69,6 @@ download:
 
 ---
 
-I have 7+ years of experience working at fast-paced digital agencies in London. I’ve worked on high profile campaigns for global brands, spanning digital design for everything from display advertising and social campaigns to large scale websites. My skills range from digital design through to front end development, and I have extensive experience with all the industry standard design tools, as well as up-to-date front end development technologies. I have a passion for beautiful design that is as functional as it is aesthetic, with a solid grounding in user experience. 
+Hi, I'm Emil. I'm a Digital Designer and Front End Developer with 7+ years of experience working at fast-paced digital agencies in London. I’ve worked on high profile campaigns for global brands, spanning digital design for everything from display advertising and social campaigns to large scale websites. My skills range from digital design through to front end development, and I have extensive experience with all the industry standard design tools, as well as up-to-date front end development technologies. I have a passion for beautiful design that is as functional as it is aesthetic, with a solid grounding in user experience. 
 
 I strongly believe that the core of all great design is empathy; a genuine understanding of the user and their needs, and how best to communicate with them in a contextual, meaningful way.

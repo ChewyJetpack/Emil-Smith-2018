@@ -1,8 +1,5 @@
 ---
-title: Some stuff is in here
-menu: Home
-onpage_menu: true
-
+title: 'Emil Smith - Digital Designer Portfolio'
 content:
     items: '@self.modular'
     order:
@@ -14,4 +11,7 @@ content:
             - _my_dudes
             - _pinnochio
             - _contact
+menu: Home
+onpage_menu: true
 ---
+

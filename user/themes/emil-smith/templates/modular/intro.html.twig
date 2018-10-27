@@ -5,10 +5,15 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-12">
-            <h1 class="intro-msg">{{ page.header.intro_msg }}</h1>
-            {{ page.content }}
-            <a href="#contact" class="btn"><span>Get in touch</span></a>
+            <div class="col-12 col-md-8">
+            {% if uri.query('hi') == 'there' %}
+                <h1 class="intro-msg">Hi, Roli ;)</h1>
+                <h3>This is creepy, I know. Whatever, let's talk jobs. Take a look around and check out my work!</h3>
+            {% else %}
+                <h1 class="intro-msg">{{ page.header.intro_msg }}</h1>
+                {{ page.content }}
+                <a href="#get_in_touch" class="btn smoothscroll"><span>Get in touch</span></a>
+            {% endif %}
             </div>
         </div>
     </div>

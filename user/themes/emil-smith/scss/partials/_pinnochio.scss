@@ -69,7 +69,9 @@
                 display: block;
                 overflow:hidden;
                 transform:translateZ(1px) translateY(-2%);
-                animation:floaty 4s ease infinite alternate;
+                @media screen and (min-width:768px) {
+                    animation:floaty 4s ease infinite alternate;
+                }
                 box-shadow:rgba($black, 0.1) 10px 10px 20px;
                 img {
                     position: absolute;
@@ -85,7 +87,9 @@
                 top:60%;
                 z-index:0;
                 .feat-img {
-                    animation:floaty 4s ease 1.5s infinite alternate;
+                    @media screen and (min-width:768px) {
+                        animation:floaty 4s ease infinite alternate;
+                    }
                 }
             }
         }

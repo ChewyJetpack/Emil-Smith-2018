@@ -8,6 +8,11 @@ galleries.forEach(gallery => {
 const navItems = document.querySelectorAll('.smoothscroll');
 
 
+// Internet Explorer 6-11
+const isIE = /*@cc_on!@*/false || !!document.documentMode;
+// Edge 20+
+const isEdge = !isIE && !!window.StyleMedia;
+
 navItems.forEach(navItem => {
     const position = window.pageYOffset;
     const header = document.getElementById("header");
@@ -28,7 +33,11 @@ navItems.forEach(navItem => {
         e.preventDefault();
         let location = getElemDistance(target) - headerHeight;
         console.log(location);
-        window.scrollTo({ top: location, behavior: "smooth" });
+        if (isIE || isEdge) {
+            target.scrollIntoView({behavior: 'smooth'});
+        } else {
+            window.scrollTo({ top: location, behavior: "smooth" });
+        }        
     })
 });
 

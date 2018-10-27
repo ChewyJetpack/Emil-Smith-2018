@@ -5,7 +5,11 @@ html, body {
     color:$white;
     font-family: 'Roboto', sans-serif;
     font-size:18px;
-    line-height:1.6em;
+    line-height:1.3em;
+}
+
+body {
+    padding-top:69px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -16,16 +20,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size:70px;
+    font-size:50px;
+    @media screen and (min-width:768px) {
+        font-size:70px;
+    }
 }
 
 h2 {
-    font-size:36px;
+    font-size:30px;
+    @media screen and (min-width:768px) {
+        font-size:36px;
+    }
 }
 
 h3 {
-    font-size:26px;
-    //font-weight: 500;
+    font-size:20px;
+    line-height:1.3em;
+    @media screen and (min-width:768px) {
+        font-size:26px;
+        line-height:1.3em;
+    }
 }
 
 a {
@@ -45,77 +59,6 @@ img {
     max-width: 100%;
 }
 
-.light-bg {    
-    background:$white;
-    background:linear-gradient(-45deg, lighten($green, 60%) 5%, $white 50%);
-    background-position:fixed;
-    color:$black;
-    .title, .date {
-        color: $grey_dark;
-    }
-    p {
-        color:$charcoal;
-    }
-    .btn {        
-        background:linear-gradient(-45deg, $purple, $blue);
-        background-size:180% 180%;
-        animation: gradient 40s ease infinite;
-        opacity:0.9;
-        transition:opacity 0.3s, box-shadow 0.3s;
-        span {
-            background:$white;
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
-            transition:opacity 0.3s;
-        }
-        &:hover {
-            background:linear-gradient(-45deg, $purple, $blue);
-            background-size:180% 180%;
-            animation: gradient 40s ease infinite;
-            opacity:1;
-            span {      
-            }
-        }
-    }
-}
-
-.dark-bg {    
-    background:linear-gradient(-45deg, darken($blue, 27%), $black, darken($purple, 40%));
-    background-size:150% 150%;
-    animation: gradient 20s ease infinite;
-    color:$white;
-    p {
-        color:$grey;
-    }
-    h1, .title, .date {
-        color: $white;
-    }
-}
-
-.goverlay {    
-    background:linear-gradient(-45deg, rgba(darken($blue, 27%),0.9), rgba($black,0.9), rgba(darken($purple, 40%),0.9));
-    background-size:150% 150%;
-    //animation: gradient 20s ease infinite;
-}
-
-.colour-bg {
-    background:linear-gradient(-45deg, $pink, $purple, $blue, $green) fixed;
-    background-size:180% 180%;
-    animation: gradient 40s ease infinite;
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
 .btn {
     box-shadow: rgba(black, 0.1) 0px 4px 0px;
     color:$black;
@@ -132,7 +75,7 @@ img {
     opacity:1;
     font-size:20px;
     transition:background 0.3s, box-shadow 0.3s;
-    margin-top:15px;
+    margin-top:25px;
     &:hover {
         background:rgba($white, 1);
         box-shadow: rgba(black, 0.1) 0px 7px 0px;

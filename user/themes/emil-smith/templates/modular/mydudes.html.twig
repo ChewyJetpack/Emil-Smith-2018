@@ -14,8 +14,7 @@
                 <div class="row">
                 {% for dude in page.header.dudes %}
                     <div class="col-4">
-                        <div class="dude-wrap" style="mask-image:url(images/{{ dude.dude }})">
-                            {# <img src="images/{{ dude.dude }}" alt="{{ dude.dude_name }}"> #}
+                        <div class="dude-wrap" style="background:url(images/{{ dude.dude }}) center center / contain no-repeat;">
                         </div>
                     </div>
                 {% endfor %}
