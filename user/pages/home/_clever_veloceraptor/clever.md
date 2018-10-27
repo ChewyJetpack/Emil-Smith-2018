@@ -1,57 +1,74 @@
 ---
-title: Music
-menu: Music
+title: CV
+menu: CV
 
 image: http://placehold.it/500x500.jpg
 
 experience:
-    - title: Drum and Bass
+    - title: Experience
       css_class: experience
       items:
-        - company: Lorem Ipsum
-          title: Lorem ipsum dolor sit amet
-          date: Dolor sit amet
-          description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sapien ante, gravida quis neque et, placerat sodales nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras interdum iaculis ipsum, at tincidunt nisl pellentesque ut. Praesent tincidunt diam arcu, eget pretium mauris porttitor at. Nullam et consequat risus, sed ultricies diam. Praesent pretium, elit nec lobortis feugiat, purus arcu molestie massa, nec dapibus tortor arcu eu sapien.
-        - company: Lorem Ipsum
-          title: Lorem ipsum dolor sit amet
-          date: Dolor sit amet
-          description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sapien ante, gravida quis neque et, placerat sodales nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras interdum iaculis ipsum, at tincidunt nisl pellentesque ut. Praesent tincidunt diam arcu, eget pretium mauris porttitor at. Nullam et consequat risus, sed ultricies diam. Praesent pretium, elit nec lobortis feugiat, purus arcu molestie massa, nec dapibus tortor arcu eu sapien.
-        - company: Lorem Ipsum
-          title: Lorem ipsum dolor sit amet
-          date: Dolor sit amet
-          description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sapien ante, gravida quis neque et, placerat sodales nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras interdum iaculis ipsum, at tincidunt nisl pellentesque ut. Praesent tincidunt diam arcu, eget pretium mauris porttitor at. Nullam et consequat risus, sed ultricies diam. Praesent pretium, elit nec lobortis feugiat, purus arcu molestie massa, nec dapibus tortor arcu eu sapien.
+        - company: BPL Marketing
+          title: Digital Designer (mid-senior level)
+          date: July 2015 - Present
+          description: Helping to build a digital, web-focused department, to bring web design and development in-house. Working on campaign concepts through to delivery, designing, building and maintaining both small and large web projects for a varied range of clients. Making decisions on how to accomplish briefs, including wireframing, designing, writing technical specifications and brand guidelines.
+        - company: Twotwentyseven
+          title: Digital Designer (mid level)
+          date: June 2013 - July 2015
+          description: Working as part of a small agency, creating websites for a range of clients. Helping to develop an in-house product; a CMS for restaurants to easily manage content and updating menus. Designing and building eCommerce websites based on Shopify, using the Liquid templating language.
+        - company: Amobee
+          title: Digital Designer (junior level)
+          date: July 2012 - July 2013
+          description: Designing mobile display advertising and rich media experiences for global campaigns, alongside a small team of designers. Experimenting with concepts such as augmented reality, developing efficient solutions to streamline internal processes and looking for ways to improve our creative offering with custom code.
 
 education:
-    - title: UK Garage
+    - title: Education
       css_class: education
       items:
-        - institution: Lorem ipsum dolor sit amet
-          date: Lorem ipsum dolor sit amet
-          subject: Lorem ipsum dolor sit amet
+        - institution: University of the Arts, London
+          date: 2009 - 2012
+          subject: Digital Media Design BA (Hons)
 
 skills:
-    - title: Dubstep
+    - title: Skills
       css_class: skills
       description: 
       items:
-        - subject: Best MCs
+        - subject: Design tools
           abilities:
-            - Skibbadee
-            - Shabbadee
-            - Eksman
-            - MC GQ
-        - subject: Worst terminology to use in 2018
+            - Adobe Photoshop
+            - Adobe Illustrator
+            - Adobe Experience Design (XD)
+            - Adobe After Effects
+            - Figma
+        - subject: Development tools
           abilities:
-            - Junglist
-            - Bo (Boh)
+            - HTML
+            - CSS
+            - Javascript
+            - jQuery
+            - SCSS
+            - LESS
+            - Gulp
+            - Bower
+            - Yarn
+            - node.js
+            - Vue.js
+            - Git
+            - npm
+            - Twig
+            - Liquid
+            - Blade
 
 download:
-  - title: Download
+  - title: Download CV
     css_class: download
-    description: Free download movies xxx avengers.exe
-    cta: click here
-    url: lol.com
+    description: Save my CV in PDF format
+    cta: Download
+    url: assets/emilsmithcv.pdf
 
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nulla nisi, efficitur non placerat ut, vulputate non libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac lacus bibendum, vestibulum neque et, efficitur tellus. Curabitur quis lorem et lacus ullamcorper convallis. Proin laoreet non mauris nec viverra. Donec a luctus ligula. Fusce ullamcorper semper felis in posuere. Praesent finibus mattis ante sed semper. Nullam ex velit, fermentum sit amet tempus eu, ornare a enim. Aenean urna libero, accumsan id lobortis ac, porta in diam. Sed ullamcorper fermentum lorem, in hendrerit odio mollis id. 
+I have 7+ years of experience working at fast-paced digital agencies in London. I’ve worked on high profile campaigns for global brands, spanning digital design for everything from display advertising and social campaigns to large scale websites. My skills range from digital design through to front end development, and I have extensive experience with all the industry standard design tools, as well as up-to-date front end development technologies. I have a passion for beautiful design that is as functional as it is aesthetic, with a solid grounding in user experience. 
+
+I strongly believe that the core of all great design is empathy; a genuine understanding of the user and their needs, and how best to communicate with them in a contextual, meaningful way.

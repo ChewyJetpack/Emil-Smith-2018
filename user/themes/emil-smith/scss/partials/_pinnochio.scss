@@ -14,18 +14,33 @@
             transition:top 0.3s, box-shadow 0.3s;
             top:0;
             margin-bottom:30px;
+            width:100%;
+            padding-bottom:100%;
+            overflow:hidden;
             &:hover {
                 top:-5px;
                 box-shadow:rgba($black, 0.1) 0 5px 10px;
             }
             img {
-                float:left;
+                position: absolute;
+                left: 50%;
+                top: 0;
+                transform:translate(-50%,0);
             }
             &:after {
                 display: block;
                 clear:both;
                 float:none;
                 content:"";
+            }
+        }
+    }
+    &.eor {
+        .feature-imgs {
+            a {
+                .feat-img {
+                    padding-bottom:90%;
+                }
             }
         }
     }
@@ -45,20 +60,31 @@
             margin-top:-10px;
             opacity:1;
             z-index:1;
-            img {
+            .feat-img {
                 position: absolute;
                 top:0;
                 left:0;
                 width:100%;
+                padding-bottom:100%;
+                display: block;
+                overflow:hidden;
                 transform:translateZ(1px) translateY(-2%);
                 animation:floaty 4s ease infinite alternate;
                 box-shadow:rgba($black, 0.1) 10px 10px 20px;
+                img {
+                    position: absolute;
+                    left: 50%;
+                    top: 0;
+                    transform:translate(-50%,);
+                    min-height:100%;
+                    min-width:100%;
+                }
             }
             &:nth-of-type(2n) {
                 left:10%;
                 top:60%;
                 z-index:0;
-                img {
+                .feat-img {
                     animation:floaty 4s ease 1.5s infinite alternate;
                 }
             }

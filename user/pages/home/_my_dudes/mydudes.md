@@ -1,22 +1,26 @@
 ---
-title: My Dudes
-menu: My Dudes
+title: Clients
+menu: Clients
 
 dudes:
-    - dude: dude.svg
+    - dude: nokia.svg
       dude_name: some dude
-    - dude: dude.svg
+    - dude: google.svg
       dude_name: some dude
-    - dude: dude.svg
+    - dude: ebay.svg
       dude_name: some dude
-    - dude: dude.svg
+    - dude: virgin.svg
       dude_name: some dude
-    - dude: dude.svg
+    - dude: rbl.svg
       dude_name: some dude
-    - dude: dude.svg
+    - dude: three.svg
       dude_name: some dude
-    - dude: dude.svg
+    - dude: expedia.svg
+      dude_name: some dude
+    - dude: sony.svg
+      dude_name: some dude
+    - dude: coravin.svg
       dude_name: some dude
 ---
 
-Here are some of my dudes, my dudes.
+I've had the privilege to work with some amazing clients, both big and small.

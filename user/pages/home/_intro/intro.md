@@ -2,7 +2,7 @@
 title: Intro
 menu: Home
 
-intro_msg: Hello m8
+intro_msg: Emil Smith
 ---
 
-This is some content
+## Digital Designer & Front End Developer

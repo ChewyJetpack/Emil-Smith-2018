@@ -3,10 +3,10 @@ title: Get in touch
 menu: Get in touch
 ---
 
-# Get fucked
+# Get in touch
 
 ### Email: [hello@emilsmith.co.uk](mailto:hello@emilsmith.co.uk).
 
 ### Phone: [+447503111160](mailto:+447503111160).
 
-### Sniff my source on [Github](lol)
+### Check out the source code for this website on [Github](lol)

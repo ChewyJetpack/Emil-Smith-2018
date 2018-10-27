@@ -33,7 +33,9 @@
                     <div class="feature-imgs">
                         {% for feature_img in release.feature_imgs %}
                             <a href="{{ feature_img }}" class="gallery-{{ release.css_class }}" data-type="image">
-                                <img src="{{ feature_img }}" alt="{{ release.title }}" />
+                                <span class="feat-img">
+                                    <img src="{{ feature_img }}" alt="{{ release.title }}" />
+                                </span>
                             </a>
                         {% endfor %}
                     </div>

@@ -1,37 +1,38 @@
 ---
-title: Releases
-menu: Releases
+title: Portfolio
+menu: portfolio
 
 releases:
-    - title: Sick tune
-      css_class: sick-tune
+    - title: Three & Tinder
+      css_class: three
       description: 
-        - This tune is such a banger I had to call bomb squad to my house cos I was worried it was terrorism but then they heard the tune and evacuated my family so now we are all living under a bridge until the government investigation is over but it was all worth it because this tune
-        - "### this is a test"
+        - My most recent project for Three, undertaken as part of my role at BPL Marketing, involved a collaboration with Tinder, where phones are juxtaposed into historical events, to show how they might have turned out.
+        - I designed and built a dual-branded promotional microsite, emulating Tinder's functionality. The user plays as King Henry, swiping left or right on his six wives to determine which ones survived, or which were beheaded or divorced.
+        - The project was wireframed in Figma, designed in Photoshop and built alongside a Back End Developer, using Laravel and Vue.js.
       images:
-        - http://placehold.it/100x100.jpg
-        - http://placehold.it/100x100.jpg
-        - http://placehold.it/100x100.jpg
+        - images/three1.jpg
+        - images/three4.jpg
+        - images/three5.jpg
       feature_imgs:
-        - http://placehold.it/960x960.jpg
-        - http://placehold.it/960x960.jpg
-    - title: Banger of a riddim
+        - images/three2.jpg
+        - images/three3.jpg
+    - title: Coravin
       css_class: banger
       description: 
-        - This tune is such a banger I had to call bomb squad to my house cos I was worried it was terrorism but then they heard the tune and evacuated my family so now we are all living under a bridge until the government investigation is over but it was all worth it because this tune
-        - this is a test
+        - Coravin is a US based start up, offering an innovative product which enables people to pour wine from the bottle without removing the cork, using a specialised needle to pierce the cork and replace the lost volume of wine with compressed argon gas.
+        - After designing a number of campaign materials for Coravin, they enlisted BPL to design and build a number of international brochure websites to showcase their products in markets in which they don’t operate an eCommerce business. I designed the entire brochure site in way that I feel showcases the product, putting it front and centre, enhanced with imagery and interactivity.
+        - The site is based on a Wordpress back end, and uses npm to build front end assets.
       images:
-        - http://placehold.it/200x200.jpg
-        - http://placehold.it/200x200.jpg
-        - http://placehold.it/200x200.jpg
+        - images/cor3.jpg
+        - images/cor4.jpg
+        - images/cor5.jpg
       feature_imgs:
-        - http://placehold.it/960x960.jpg
-        - http://placehold.it/960x960.jpg
-    - title: Fire plate
-      css_class: fireplate
+        - images/cor1.jpg
+        - images/cor2.jpg
+    - title: Royal British Legion
+      css_class: rbl
       description: 
-        - This tune is such a banger I had to call bomb squad to my house cos I was worried it was terrorism but then they heard the tune and evacuated my family so now we are all living under a bridge until the government investigation is over but it was all worth it because this tune
-        - this is a test
+        - The Royal British Legion is a long-standing client at BPL Marketing. After inheriting the website from their previous, outsourced development team, I took on the task of refactoring the entire front end of the site. As part of this, I made large contributions to the Royal British Legion’s digital brand guidelines and designed and built a UI kit for their current and future web projects; the RBL Boilerplate. The Boilerplate consists of all necessary UI elements for the website, and was built and maintained in isolation from the main website, so it can serve as a dependency for the main site, as well as other satellite projects.
       images:
         - http://placehold.it/301x301.jpg
         - http://placehold.it/302x302.jpg
@@ -39,6 +40,43 @@ releases:
       feature_imgs:
         - http://placehold.it/960x960.jpg
         - http://placehold.it/960x960.jpg
+    - title: Everyone Remembered
+      css_class: eor
+      description: 
+        - Everyone Remembered is a campaign undertaken by the Royal British Legion with the goal of commemorating each and every soldier who died in WW1, through user generated commemorations. Based on a database of 1,060,174 soldiers, users were able to search through names, regiments and locations to find lost relatives or discover those who may have been forgotten, and “remember” them, by way of placing a poppy on an interactive map, leaving a short commemoration and even uploading photographs. 
+
+        - The project was initially designed out of house at BPL, and subsequently redesigned by me, and integrated with the RBL Boilerplate. Over the last few years, I have also worked on refining the UX of the site through testing and reworking various user flows.
+
+        - The site as it currently stands is not entirely my design, as the client has chosen to move some design work in-house, but I am very happy with my contributions to the project.
+      images:
+        - images/eor3.jpg
+        - images/eor4.jpg
+        - images/eor5.jpg
+      feature_imgs:
+        - images/eor1.jpg
+        - images/eor2.jpg
+    - title: Sypro
+      css_class: sypro
+      description: 
+        - Sypro is a software company, specialising in B2B software solutions for project, contract, compliance and asset management. During my role at BPL Marketing, they asked us to design a website for one of their new products; Total Risk Manager. They were so happy with the deisgn, they asked us to redesign their main website to maintain the look and feel. We went one better and integrated all of their product websites with their main website, with a consistent brand image.
+      images:
+        - images/syp3.jpg
+        - images/syp4.jpg
+        - images/syp5.jpg
+      feature_imgs:
+        - images/syp1.jpg
+        - images/syp2.jpg
+    - title: Peng Dominion
+      css_class: pengdominion
+      description: 
+        - Peng Dominion is a labour of love - I started it as a vessel through which to release my own music, to free myself from the limitations that come with releasing music through record labels. I also release music by artists whose work I find fun and inspiring. 
+        - I design all the artwork and even master all the releases by myself.
+      images:
+        - images/peng3.jpg
+        - images/peng4.jpg
+      feature_imgs:
+        - images/peng1.jpg
+        - images/peng2.jpg
 ---
 
 # Releases
