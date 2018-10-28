@@ -61,7 +61,7 @@
                 <div class="clever-cat {{ download.css_class }}">
                 <h2>{{ download.title }}</h2>
                 <div class="description">{{ download.description | markdown }}</div>
-                <a href="{{ download.url }}" class="btn"><span>{{ download.cta }}</span></a>
+                <a href="{{ download.url }}" class="btn" target="_blank">{{ download.cta }}</a>
                 </div>
             {% endfor %}
             </div>

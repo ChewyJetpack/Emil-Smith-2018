@@ -5,6 +5,9 @@
         <div class="row">
             <div class="col-12">
             {{ page.content }}
+            <h3>Email: <a href="{{ page.header.links[0].link }}" target="_blank">{{ page.header.links[0].linktext }}</a></h3>
+            <h3>Phone: <a href="{{ page.header.links[1].link }}" target="_blank">{{ page.header.links[1].linktext }}</a></h3>
+            <h3>Check out my source on <a href="{{ page.header.links[2].link }}" target="_blank">{{ page.header.links[2].linktext }}</a></h3>
             </div>
         </div>
     </div>
