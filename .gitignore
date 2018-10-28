@@ -1,18 +1,8 @@
-# Grav Root and Unused
-/*.*
+#ignore Grav
+*
+
+# except
 !.gitignore
-/assets
-/backup
-/bin
-/cache
-/images
-/logs
-/system
-user/*.*
-user/accounts
-user/config/*.*
-user/data
-user/themes/quark
-/vendor
-/webserver-configs
-/node_modules
+!./images
+!*/node_modules/glightbox/dist
+!./user
