@@ -11,3 +11,10 @@ vendor/
 webserver-configs/
 *.php
 site.webmanifest
+CHANGELOG.md
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+LICENSE.txt
+composer.json
+composer.lock
+robots.txt
