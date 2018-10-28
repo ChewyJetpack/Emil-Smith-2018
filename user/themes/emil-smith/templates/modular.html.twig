@@ -1,7 +1,0 @@
-{% extends 'partials/modular_base.html.twig' %}
-
-{% block modular %}  
-    {% for module in page.collection() %}  
-        {{ module.content }}
-    {% endfor %}
-{% endblock %}
