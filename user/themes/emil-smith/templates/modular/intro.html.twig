@@ -6,9 +6,10 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-8">
-            {% if uri.query('hi') == 'there' %}
+            {% if uri.query('hi') == 'roli' %}
                 <h1 class="intro-msg">Hi, Roli ;)</h1>
-                <h3>This is creepy, I know. Whatever, let's talk jobs. Take a look around and check out my work!</h3>
+                <h3>This is creepy, I know. Whatever, let's talk jobs.</h3>
+                <p>My name's Emil - I'm a digital designer with a bunch of dev experience, and I produce electronic music. I've been interested in your products for a while, and I've got a diverse range of skills which I think you'll be interested in. Take a look around, and I hope to hear from you soon!</p>
             {% else %}
                 <h1 class="intro-msg">{{ page.header.intro_msg }}</h1>
                 {{ page.content }}
