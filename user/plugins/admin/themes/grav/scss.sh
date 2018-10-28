@@ -1,2 +1,2 @@
 #!/bin/sh
-scss --watch scss:css-compiled --style compressed
+scss --watch scss:dist/css --style compressed

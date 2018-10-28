@@ -39,4 +39,4 @@ gulp.task('js', function () {
 });
 
 
-gulp.task('default', ['build']);
+gulp.task('default', ['js', 'scss']);

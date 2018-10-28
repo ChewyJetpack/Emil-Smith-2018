@@ -1,10 +1,10 @@
-{% do assets.addCss(theme_url~'/css-compiled/nucleus.css') %}
-{% do assets.addCss(theme_url~'/css-compiled/template.css') %}
-{% do assets.addCss(theme_url~'/css-compiled/preset.css') %}
+{% do assets.addCss(theme_url~'/dist/css/nucleus.css') %}
+{% do assets.addCss(theme_url~'/dist/css/template.css') %}
+{% do assets.addCss(theme_url~'/dist/css/preset.css') %}
 {% if config.plugins.admin.google_fonts %}
-    {% do assets.addCss(theme_url~'/css-compiled/fonts.css') %}
+    {% do assets.addCss(theme_url~'/dist/css/fonts.css') %}
 {% else %}
-    {% do assets.addCss(theme_url~'/css-compiled/simple-fonts.css') %}
+    {% do assets.addCss(theme_url~'/dist/css/simple-fonts.css') %}
 {% endif %}
 {% do assets.addCss(theme_url~'/css/'~icon_style~'.min.css') %}
 {% do assets.addCss(theme_url~'/css/chartist.min.css') %}
