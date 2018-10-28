@@ -90,6 +90,9 @@ header {
                 opacity:0;
             }
         }
+        &:focus {
+            outline:none;
+        }
     }
 }
 
@@ -103,6 +106,7 @@ header {
             li {
                 display: inline-block;
                 margin-right:15px;
+                line-height:29px;
             }
         }
         a {

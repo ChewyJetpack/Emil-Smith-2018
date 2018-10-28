@@ -1,6 +1,6 @@
 ---
 title: Portfolio
-menu: portfolio
+menu: Portfolio
 
 releases:
     - title: Coravin
