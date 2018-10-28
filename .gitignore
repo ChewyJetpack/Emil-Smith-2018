@@ -9,7 +9,5 @@ system/
 tmp/
 vendor/
 webserver-configs/
-*.json
-*.lock
 *.php
 site.webmanifest
