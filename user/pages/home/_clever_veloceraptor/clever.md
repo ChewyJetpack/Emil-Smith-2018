@@ -65,7 +65,7 @@ download:
     css_class: download
     description: Save my CV in PDF format
     cta: Download
-    url: assets/emilsmithcv.pdf
+    url: assets/EmilSmithCV.pdf
 
 ---
 
