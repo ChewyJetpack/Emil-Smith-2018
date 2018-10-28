@@ -1,0 +1,70 @@
+{% macro pageLinkName(text) %}{{ text|lower|replace({' ':'_'}) }}{% endmacro %}
+
+<div class="module clever light-bg" id="{{ _self.pageLinkName(page.header.menu) }}">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="cv-title">{{ page.header.title }}</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-8">
+                {{ page.content | markdown }}
+            </div>
+            <div class="col-12 col-sm-4">
+                <img class="profile-img" src="{{ page.header.image }}" alt="{{ page.header.title }}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-8">
+            {% for jobs in page.header.experience %}
+                <div class="clever-cat {{ jobs.css_class }}">
+                    <h2>{{ jobs.title }}</h2>
+                    {% for item in jobs.items %}
+                        <div class="clever-item job">
+                            <h3>{{ item.company }}</h3>
+                            <div class="title">{{ item.title }}</div>
+                            <div class="date">{{ item.date }}</div>
+                            <div class="description">{{ item.description | markdown }}</div>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+            </div>
+            <div class="col-12 col-lg-4">
+            {% for qualifications in page.header.education %}                
+                <div class="clever-cat {{ qualifications.css_class }}">
+                <h2>{{ qualifications.title }}</h2>
+                {% for item in qualifications.items %}
+                    <div class="clever-item qualification">
+                        <h3>{{ item.institution }}</h3>
+                        <div class="title">{{ item.subject }}</div>
+                        <div class="date">{{ item.date }}</div>
+                    </div>
+                {% endfor %}
+                </div>
+            {% endfor %}
+            {% for skills in page.header.skills %}            
+                <div class="clever-cat {{ skills.css_class }}">
+                <h2>{{ skills.title }}</h2>
+                {% for item in skills.items %}
+                    <div class="clever-item skill">
+                        <h3>{{ item.subject }}</h3>
+                        {% for ability in item.abilities %}
+                            <div class="title">{{ ability }}</div>
+                        {% endfor %}
+                    </div>
+                {% endfor %}
+                </div>
+            {% endfor %}
+            {% for download in page.header.download %}            
+                <div class="clever-cat {{ download.css_class }}">
+                <h2>{{ download.title }}</h2>
+                <div class="description">{{ download.description | markdown }}</div>
+                <a href="{{ download.url }}" class="btn"><span>{{ download.cta }}</span></a>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

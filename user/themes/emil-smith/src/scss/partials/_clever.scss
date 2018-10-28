@@ -1,0 +1,76 @@
+.clever {
+    .profile-img {
+        transform:translateZ(1px) perspective(1000px) rotate3d(0,1,0,-10deg);
+        background-clip: padding-box;
+        box-shadow:rgba($black, 0.06) 10px 10px 20px;
+        width:90%;
+    }
+    transition:all 0.3s 0.3s;
+    overflow:hidden;
+    &:before {
+        width:0;
+        height:0;
+        border-radius:50%;
+        content:"";
+        display:block;
+        position:absolute;
+        bottom:0;
+        right:0;
+        transform:translate(50%,50%);
+        background:$white;
+        transition:all 0.5s;
+    }
+    &.active {
+        color:$black;
+        background:$white;
+        h1 {
+            color:$blue;
+        }
+        &:before {
+            width:400%;
+            height:400%;
+        }
+    }
+    &.dark-bg {
+        h1 {
+            color:$pink;
+        }
+    }
+}
+
+.clever-cat {
+    padding-top:45px;
+    h2 {
+        margin:0 0 45px;
+    }
+}
+
+.clever-item {
+    margin-bottom: 45px;
+    border-left:solid 4px rgba($pink, 0.4);
+    padding-left:26px;
+    &:last-of-type {
+        margin:0;
+    }
+    .title {
+        font-weight:700;
+        color:$charcoal;
+    }
+    .description {
+        margin-top:15px;
+    }
+    &.qualification {
+        border-color:rgba($blue, 0.4);
+    }
+    &.skill {
+        border-color:rgba($purple, 0.4);
+        .title {
+            display: inline-block;
+            margin-right:5px;
+            font-weight:400;
+            &:not(:last-of-type):after {
+                content:",";
+            }
+        }
+    }
+}

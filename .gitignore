@@ -1,8 +1,15 @@
 #ignore Grav
-*
-
-# except
-!.gitignore
-!./images
-!*/node_modules/glightbox/dist
-!./user
+assets/
+backup/
+bin/
+cache/
+logs/
+node_modules/
+system/
+tmp/
+vendor/
+webserver-configs/
+*.json
+*.lock
+*.php
+site.webmanifest

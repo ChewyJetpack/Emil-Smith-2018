@@ -1,0 +1,47 @@
+{% macro pageLinkName(text) %}{{ text|lower|replace({' ':'_'}) }}{% endmacro %}
+
+<div class="releases" id="{{ _self.pageLinkName(page.header.menu) }}">
+
+{% for release in page.header.releases %}
+    {% if loop.index0 is odd %}
+    <div class="module release {{ release.css_class }}">
+    {% else %}    
+    <div class="module release {{ release.css_class }} light-bg">
+    {% endif %}
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 order-2 order-md-1">
+                    <h1>{{ release.title }}</h1>
+                    <div class="description">
+                        {% for item in release.description %}
+                            {{ item | markdown }}
+                        {% endfor %}
+                    </div>
+                    <div class="gallery">
+                        <div class="row">
+                        {% for image in release.images %}
+                            <div class="col-3">
+                                <a href="{{ image }}" class="gallery-{{ release.css_class }}" data-type="image" style="background:url({{ image }}) center top / cover no-repeat">
+                                </a>
+                            </div>
+                        {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 order-1 order-md-2">
+                    <div class="feature-imgs">
+                        {% for feature_img in release.feature_imgs %}
+                            <a href="{{ feature_img }}" class="gallery-{{ release.css_class }}" data-type="image">
+                                <span class="feat-img">
+                                    <img src="{{ feature_img }}" alt="{{ release.title }}" />
+                                </span>
+                            </a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+
+</div>

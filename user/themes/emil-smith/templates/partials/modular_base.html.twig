@@ -1,0 +1,75 @@
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+<!DOCTYPE html>
+<html lang="{{ grav.language.getActive ?: theme_config.default_lang }}">
+<head>
+{% block head %}
+    <meta charset="utf-8" />
+    <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include 'partials/metadata.html.twig' %}
+
+    
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#9f00a7">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <link rel="canonical" href="{{ page.url(true, true) }}" />
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700,500|Roboto:400,700" rel="stylesheet"> 
+
+    {% block stylesheets %}
+        {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', 99) %}
+        {% do assets.addCss('theme://node_modules/glightbox/dist/css/glightbox.min.css', 98) %}
+        {% do assets.addCss('theme://dist/css/main.min.css', 98) %}
+    {% endblock %}
+    {{ assets.css() }}
+
+    {% block javascripts %}
+        {% do assets.addJs('theme://node_modules/glightbox/dist/js/glightbox.min.js', {'group':'bottom'}) %}
+        {% do assets.addJs('theme://dist/js/all.js', {'group':'bottom'}) %}
+    {% endblock %}
+    {{ assets.js() }}
+
+{% endblock head%}
+</head>
+<body class="{{ page.header.body_classes }} colour-bg">
+
+{% block header %}
+    <header class="header colour-bg" id="header">
+        <a href="#" class="nav-toggle" id="navToggle"><span></span></a>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <a class="logo" href="{{ base_url == '' ? '/' : base_url }}">
+                    <img src="{{ url('theme://images/eslogo.svg') }}" alt="{{ config.site.title }}">
+                    <span class="title">{{ config.site.title }}</span>
+                    </a>
+                </div>
+                <div class="col-sm-8">
+                    {% block header_navigation %}
+                        {% include 'partials/modular_nav.html.twig' %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </header>
+{% endblock %}
+
+{% block modular %}
+       {{ page.content }} 
+{% endblock %}
+
+{% block bottom %}
+    {{ assets.js('bottom') }}
+{% endblock %}
+
+</body>
+</html>
