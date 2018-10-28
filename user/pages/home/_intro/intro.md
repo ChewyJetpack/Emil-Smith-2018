@@ -1,6 +1,6 @@
 ---
 title: Intro
-menu: Home
+menu: Intro
 
 intro_msg: Emil Smith
 ---
