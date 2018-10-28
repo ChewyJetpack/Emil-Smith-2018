@@ -9,12 +9,12 @@ var babel = require('gulp-babel');
 var concat = require('gulp-concat');
 
 gulp.task('watch', function() {
-  gulp.watch(["./scss/**/*.scss", "./js/**/*.js"], ["scss", "js"]);
+  gulp.watch(["./src/scss/**/*.scss", "./src/js/**/*.js"], ["scss", "js"]);
 });
 
 gulp.task('scss', function () {
   gulp
-    .src("./scss/**/*.scss")
+    .src("./src/scss/**/*.scss")
     .pipe(sourcemaps.init())
     .pipe(sass({
         outputStyle: "compact",
@@ -30,7 +30,7 @@ gulp.task('scss', function () {
 });
 
 gulp.task('js', function () {
-  gulp.src(['./js/**/*.js', 'node_modules/babel-polyfill/dist/polyfill.js'])
+  gulp.src(['./src/js/**/*.js', 'node_modules/babel-polyfill/dist/polyfill.js'])
     .pipe(sourcemaps.init())
     .pipe(babel({ presets: ['env'] }))
     .pipe(concat('all.js'))
