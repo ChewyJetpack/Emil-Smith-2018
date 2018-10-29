@@ -5,4 +5,4 @@ menu: Intro
 intro_msg: Emil Smith
 ---
 
-## Visual/UX/UI Designer
+## Web/UI Designer & Front End Developer
