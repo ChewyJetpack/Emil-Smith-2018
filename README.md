@@ -7,3 +7,4 @@
 * pull this repo and cp into Grav dir
 * cd user/themes/emil-smith
 * npm install --production
+* gulp
