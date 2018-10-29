@@ -1,6 +1,6 @@
 ## [Emil Smith's Portfolio](http://emilsmith.pro)
 
-###Installation
+### Installation
 
 * install Grav
 * rm user/pages/* -r
