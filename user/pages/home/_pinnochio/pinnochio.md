@@ -44,7 +44,7 @@ releases:
       css_class: rbl
       description: 
         - The Royal British Legion is a long-standing client at BPL Marketing. After inheriting the website from their previous, outsourced development team, I took on the task of refactoring the entire front end of the site. As part of this, I made large contributions to the Royal British Legion’s digital brand guidelines and designed and built a UI kit for their current and future web projects; the RBL Boilerplate. The Boilerplate consists of all necessary UI elements for the website, and was built and maintained in isolation from the main website, so it can serve as a dependency for the main site, as well as other satellite projects.
-        - Aside from the RBL Boilerplate, I've undertaken solely responsible for design and front end development work on the main RBL website for 3.5 years, including annual campaigns, microsites and complex user interfaces for new functionality.
+        - Aside from the RBL Boilerplate, I've been responsible for all design and front end development work on the main RBL website for 3.5 years, including annual campaigns, microsites and complex user interfaces for new functionality.
       images:
         - images/rbl3.jpg
         - images/rbl4.jpg
