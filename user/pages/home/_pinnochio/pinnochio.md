@@ -44,6 +44,7 @@ releases:
       css_class: rbl
       description: 
         - The Royal British Legion is a long-standing client at BPL Marketing. After inheriting the website from their previous, outsourced development team, I took on the task of refactoring the entire front end of the site. As part of this, I made large contributions to the Royal British Legion’s digital brand guidelines and designed and built a UI kit for their current and future web projects; the RBL Boilerplate. The Boilerplate consists of all necessary UI elements for the website, and was built and maintained in isolation from the main website, so it can serve as a dependency for the main site, as well as other satellite projects.
+        - Aside from the RBL Boilerplate, I've undertaken solely responsible for design and front end development work on the main RBL website for 3.5 years, including annual campaigns, microsites and complex user interfaces for new functionality.
       images:
         - images/rbl3.jpg
         - images/rbl4.jpg
@@ -53,7 +54,8 @@ releases:
     - title: Sypro
       css_class: sypro
       description: 
-        - Sypro is a software company, specialising in B2B software solutions for project, contract, compliance and asset management. During my role at BPL Marketing, they asked us to design a website for one of their new products; Total Risk Manager. They were so happy with the deisgn, they asked us to redesign their main website to maintain the look and feel. We went one better and integrated all of their product websites with their main website, with a consistent brand image.
+        - Sypro is a software company, specialising in B2B software solutions for project, contract, compliance and asset management. During my role at BPL Marketing, they asked us to design a website for one of their new products; Total Risk Manager. They were so happy with the design, they asked us to redesign their main website to maintain the look and feel. We went one better and integrated all of their product websites with their main website, with a consistent brand image and a cutting-edge aesthetic.
+        - The website was wireframed, prototyped and designed using Adobe XD. The build was based on a Wordpress back-end, with a modular SCSS, npm and gulp front end system.
       images:
         - images/syp3.jpg
         - images/syp4.jpg
