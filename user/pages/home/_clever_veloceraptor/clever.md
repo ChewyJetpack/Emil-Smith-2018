@@ -1,5 +1,5 @@
 ---
-title: CV
+title: Curriculum Vitae
 menu: CV
 
 image: images/emil.jpg
