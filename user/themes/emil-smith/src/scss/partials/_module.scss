@@ -62,6 +62,8 @@
 
 .colour-bg {
     background:linear-gradient(-45deg, $pink, $purple, $blue, $green) fixed;
+    // gradient idea
+    // background:repeating-linear-gradient(-45deg, $pink, $pink 25%, $purple 25%, $purple 50%, $blue 50%, $blue 75%, $green 75%, $green 100%) fixed;
     background-size:180% 180%;
     @media screen and (min-width:768px) {
         animation: gradient 20s ease infinite;
