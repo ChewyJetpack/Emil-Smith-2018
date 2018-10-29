@@ -70,6 +70,6 @@ download:
 
 ---
 
-Hi, I'm Emil. I'm a Digital UX/UI Designer & Front End Developer with 7+ years of experience working at fast-paced digital agencies in London. I’ve worked on both large and small scale web and mobile projects, feature-rich UIs, advertising and marketing campaigns and wireframes, prototypes and user flows. My skills include both design and front end development, and I have extensive experience with all the industry standard design tools, as well as up-to-date front end development technologies. I have a passion for beautiful design that is as functional as it is aesthetic, with a solid grounding in user experience.
+Hi, I'm Emil. I'm a Visual/UX/UI Designer & Front End Developer with 7+ years of experience working at fast-paced digital agencies in London. I’ve worked on both large and small scale web and mobile projects, feature-rich UIs, advertising and marketing campaigns and wireframes, prototypes and user flows. My skills include both design and front end development, and I have extensive experience with all the industry standard design tools, as well as up-to-date front end development technologies. I have a passion for beautiful design that is as functional as it is aesthetic, with a solid grounding in user experience.
 
 I strongly believe that the core of all great design is empathy; a genuine understanding of the user and their needs, and how best to drive engagement in a contextual, meaningful way.
