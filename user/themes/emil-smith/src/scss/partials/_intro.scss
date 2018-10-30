@@ -6,13 +6,24 @@
     justify-content: center;
     overflow:hidden;
     .intro-msg {
-        font-size:70px;
         margin:0;
-        @media screen and (min-width:768px) {
-            font-size:120px;
-        }
     }
     h3 {
-        margin:0;
+        margin:0 0 30px;
     }
+    p {
+        margin-top:0;
+        &:last-of-type {
+            margin-bottom:0;
+        }
+    }
+}
+
+.profile-img {
+    transform:translate(0,-50%) perspective(1000px) rotate3d(0,1,0,-10deg);
+    background-clip: padding-box;
+    box-shadow:rgba($black, 0.06) 10px 10px 20px;
+    position: absolute;
+    top:50%;
+    left:0;
 }

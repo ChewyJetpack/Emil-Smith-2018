@@ -5,16 +5,13 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-12">
-            {% if uri.query('hi') == 'roli' %}
-                <h1 class="intro-msg">Hi, Roli ;)</h1>
-                <h3>This is creepy, I know. Whatever, let's talk jobs.</h3>
-                <p>I'm Emil - I'm a digital designer with a bunch of dev experience, and I produce electronic music. I've been interested in your products for a while, and I have a diverse range of skills which I believe put me in a unique position to bring something special to this role. Take a look around, and I hope to hear from you soon!</p>
-            {% else %}
+            <div class="col-12 col-md-8 order-2 order-md-1">
                 <h1 class="intro-msg">{{ page.header.intro_msg }}</h1>
                 {{ page.content }}
                 <a href="#get_in_touch" class="btn smoothscroll"><span>Get in touch</span></a>
-            {% endif %}
+            </div>
+            <div class="col-12 col-md-4 order-1 order-md-2">
+                <img class="profile-img" src="{{ page.header.image }}" alt="{{ page.header.title }}">
             </div>
         </div>
     </div>

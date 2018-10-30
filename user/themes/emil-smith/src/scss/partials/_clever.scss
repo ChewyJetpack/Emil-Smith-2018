@@ -1,10 +1,4 @@
 .clever {
-    .profile-img {
-        transform:translateZ(1px) perspective(1000px) rotate3d(0,1,0,-10deg);
-        background-clip: padding-box;
-        box-shadow:rgba($black, 0.06) 10px 10px 20px;
-        width:90%;
-    }
     transition:all 0.3s 0.3s;
     overflow:hidden;
     &:before {
@@ -39,9 +33,12 @@
 }
 
 .clever-cat {
-    padding-top:45px;
+    padding-bottom:45px;
     h2 {
-        margin:0 0 45px;
+        margin:0 0 30px;
+    }
+    &:last-child {
+        padding-bottom:0;
     }
 }
 
