@@ -20,10 +20,5 @@
 }
 
 .profile-img {
-    transform:translate(0,-50%) perspective(1000px) rotate3d(0,1,0,-10deg);
-    background-clip: padding-box;
-    box-shadow:rgba($black, 0.06) 10px 10px 20px;
-    position: absolute;
-    top:50%;
-    left:0;
+    border-radius: 50%;
 }
