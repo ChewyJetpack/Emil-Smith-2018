@@ -3,8 +3,8 @@
     position: relative;
     min-height:50vh;
     padding:70px 0;
-    h1:first-child {
-        //margin:0;
+    h1 {
+        color:$white;
     }
 }
 
@@ -12,35 +12,34 @@
 
 .light-bg {    
     background:$white;
-    background:linear-gradient(-45deg, lighten($green, 60%) 5%, $white 50%);
     background-position:fixed;
-    color:$black;
+    color:$grey;
+    h1 {
+        color:$blue;
+        &.sep {
+            &:after {
+                background:$blue;
+            }
+        }
+    }
     .title, .date {
-        color: $grey_dark;
+        color: $charcoal;
     }
     p {
-        color:$grey_dark;
+        color:$grey;
     }
     .btn {        
-        background:linear-gradient(-45deg, $purple, $blue);
-        background-size:180% 180%;
-        animation: gradient 40s ease infinite;
+        background:$blue;
         opacity:0.9;
-        transition:opacity 0.3s, box-shadow 0.3s;
         color:$white;
         &:hover {
-            background:linear-gradient(-45deg, $purple, $blue);
-            background-size:180% 180%;
-            animation: gradient 40s ease infinite;
             opacity:1;
-            span {      
-            }
         }
     }
 }
 
 .dark-bg {    
-    background:linear-gradient(-45deg, darken($blue, 27%), $black, darken($purple, 40%));
+    background:$black;
     background-size:150% 150%;
     @media screen and (min-width:768px) {
         animation: gradient 20s ease infinite;
@@ -60,13 +59,12 @@
     //animation: gradient 20s ease infinite;
 }
 
-.colour-bg {
-    background:linear-gradient(-45deg, $pink, $purple, $blue, $green) fixed;
-    // gradient idea
-    // background:repeating-linear-gradient(-45deg, $pink, $pink 25%, $purple 25%, $purple 50%, $blue 50%, $blue 75%, $green 75%, $green 100%) fixed;
-    background-size:180% 180%;
+.colour-bg, body {
+    background:repeating-linear-gradient(-45deg, $purple, $purple 20%, $blue 20%, $blue 80%, $green 80%, $green 100%) fixed;
+    background-size:110% 110%;
+    color:$pastel_blue;
     @media screen and (min-width:768px) {
-        animation: gradient 20s ease infinite;
+        animation: gradient 40s ease infinite;
     }
 }
 

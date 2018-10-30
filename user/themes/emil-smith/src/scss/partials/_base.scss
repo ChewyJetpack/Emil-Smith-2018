@@ -72,13 +72,41 @@ img {
     font-weight:bold;
     position: relative;
     overflow:hidden;
-    background:rgba($white, 0.9);
-    opacity:1;
+    background:$white;
+    opacity:0.9;
     font-size:20px;
-    transition:background 0.3s, box-shadow 0.3s;
+    transition:background 0.3s, box-shadow 0.3s, transform 0.1s;
     margin-top:25px;
+    transform:translateY(0);
+    backface-visibility: hidden;
     &:hover {
-        background:rgba($white, 1);
         box-shadow: rgba(black, 0.1) 0px 7px 0px;
+        transform:translateY(-3px);
+    }
+}
+
+.sep {
+    display: block;
+    position: relative;
+    padding-bottom:10px;
+    &:after {
+        content:"";
+        display: block;
+        width:100%;
+        max-width:100px;
+        left:0;
+        bottom:0;
+        transform:translateY(16px);
+        height: 2px;
+        opacity:0.6;
+        background:$pastel_blue;
+    }
+}
+
+h1 {
+    &.sep {
+        &:after {
+            transform:translateY(10px);
+        }
     }
 }
