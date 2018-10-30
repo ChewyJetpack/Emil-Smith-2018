@@ -21,4 +21,11 @@
 
 .profile-img {
     border-radius: 50%;
+    max-width:80%;
+    margin:0 auto 30px auto;
+    display: block;
+    @media screen and (min-width:768px) {
+        margin:0;
+        max-width:100%;
+    }
 }
