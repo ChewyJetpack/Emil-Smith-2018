@@ -7,7 +7,7 @@ experience:
       css_class: experience
       items:
         - company: BPL Marketing
-          title: Digital Designer (mid-senior level)
+          title: Web/UI Designer & Front End Developer (mid-senior level)
           date: July 2015 - Present
           description: 
             "* Helped to build the company's first in-house digital, web-focused department
