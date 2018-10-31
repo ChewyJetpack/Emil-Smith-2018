@@ -60,11 +60,12 @@
 }
 
 .colour-bg, body {
-    background:repeating-linear-gradient(-45deg, $purple, $purple 20%, $blue 20%, $blue 80%, $green 80%, $green 100%) fixed;
-    background-size:110% 110%;
+    //background:repeating-linear-gradient(-45deg, $purple, $purple 20%, $blue 20%, $blue 80%, $green 80%, $green 100%) fixed;
+    background:linear-gradient(-45deg, $pink, $purple, $blue, $green) fixed;
+    background-size:180% 180%;
     color:$pastel_blue;
     @media screen and (min-width:768px) {
-        animation: gradient 40s ease infinite;
+        animation: gradient 20s ease infinite;
     }
 }
 
