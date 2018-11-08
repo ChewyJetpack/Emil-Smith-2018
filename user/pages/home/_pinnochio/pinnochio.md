@@ -22,7 +22,7 @@ releases:
         - My most recent project for Three, undertaken as part of my role at BPL Marketing, involved a collaboration with Tinder, where phones are juxtaposed into historical events, to show how they might have turned out.
         - I designed and built a dual-branded promotional microsite, emulating Tinder's functionality. The user plays as King Henry, swiping left or right on his six wives to determine which ones survived, or which were beheaded or divorced.
         - The project was wireframed in Figma, designed in Photoshop and built alongside a Back End Developer, using Laravel and Vue.js.
-        - Conversion metrics were extremely positive, with a 30%+ conversion rate for form submissions. 
+        - Conversion metrics were extremely positive - 76% of users engaged with the Tinder game, and 54% of users converted via a competition entry form at the end.
       images:
         - images/three1.jpg
         - images/three4.jpg
