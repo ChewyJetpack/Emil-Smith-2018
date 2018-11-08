@@ -65,6 +65,8 @@ skills:
             - Adobe Experience Design (XD)
             - Adobe After Effects
             - Figma
+            - Sketch
+            - InVision
         - subject: Development tools
           abilities:
             - HTML
