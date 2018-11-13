@@ -4,7 +4,7 @@
 
 * install Grav
 * rm user/pages/* -r
-* pull this repo and cp into Grav dir
+* clone this repo and cd into Grav dir
 * cd user/themes/emil-smith
 * npm install --production
 * gulp
